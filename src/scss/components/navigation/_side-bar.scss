@@ -1,0 +1,195 @@
+//
+// Side bar
+// ------------------------------------------------------------
+
+
+// Navigation
+// ------------------------------
+.side-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $sidebar-zindex;
+  width: $sidebar-width;
+  background-color: $sidebar-color;
+  transition: $base-transition;
+}
+.side-bar__header {
+  height: $header-height;
+  border-bottom: 1px solid darken($head-color, 5%);
+  background-color: $head-color;
+  .site-name {
+    a {
+      display: inline-block;
+      padding: 0 15px;
+      color: $white;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: $header-height;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.side-bar__content {
+  position: relative;
+  min-height: 100%;
+}
+.side-bar__menu,
+.child-menu {
+  margin: 0;
+  padding: 0;
+}
+
+@include tablet {
+  .side-bar {
+    left: -$sidebar-width;
+  }
+  .is-sidebar-open {
+    .side-bar{
+      left: 0;
+    }
+  }
+}
+
+// Navigation List
+// ------------------------------
+.side-bar__list {
+  display: block;
+  margin: 0;
+  border-bottom: 1px solid rgba($black,.15);
+  a,
+  .parent__title {
+    display: block;
+    position: relative;
+    padding: 12px 12px 12px 46px;
+    color: $gray-lighter;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: $base-transition;
+    &:hover {
+      background-color: rgba($black,.1);
+      text-decoration: none;
+    }
+  }
+  .parent__title {
+    position: relative;
+    &:before {
+      position: absolute;
+      right: 20px;
+      color: rgba($white, .5);
+      @include fontawesome("\f078");
+    }
+    &.is-open {
+      & + .child-menu {
+        display: block;
+      }
+      &:before {
+        content: "\f077";
+      }
+    }
+  }
+  .fa {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -10px;
+    font-size: 17px;
+  }
+  &.is-active {
+    & > a,
+    & > .parent__title {
+      position: relative;
+      background-color: $primary-color;
+      color: $white;
+      cursor: default;
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin-top: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba($bg-color, 0);
+        border-right-color: $bg-color;
+        content: "";
+        pointer-events: none;
+      }
+    }
+    & > .parent__title {
+      cursor: pointer;
+    }
+  }
+}
+.child-menu {
+  display: none;
+}
+.child-menu__list {
+  margin: 0;
+  a {
+    padding: 8px 15px;
+    background-color: darken($sidebar-color, 6%);
+    font-size: 13px;
+    &:hover {
+      background-color: darken($sidebar-color, 8%);
+    }
+  }
+}
+
+
+// Navigation Scroll
+// ------------------------------
+.scroll-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  & > .scroll-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    &:focus {
+      outline: thin dotted;
+    }
+  }
+  & > .scroll-content::-webkit-scrollbar {
+    display: none;
+  }
+  & > .scroll-pane {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    border-radius: $base-radius;
+    background: rgba(0,0,0,0);
+    opacity: .01;
+    transition: $base-transition;
+    & > .scroll-slider {
+      position: relative;
+      margin: 0 1px;
+      background: rgba(0,0,0,.3);
+      border-radius: $base-radius;
+    }
+  }
+  &:hover {
+    & > .scroll-pane,
+    .scroll-pane.active,
+    .scroll-pane.flashed {
+      opacity    : 0.99;
+    }
+  }
+}
+.has-scrollbar > .scroll-content::-webkit-scrollbar {
+  display: block;
+}

@@ -1,0 +1,62 @@
+//
+// Utility
+// ------------------------------------------------------------
+
+
+// Clearfix
+// --------------------
+.clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+
+// Text align
+// --------------------
+.align--center {  text-align: center !important; }
+.align--left {    text-align: left !important; }
+.align--right {   text-align: right !important; }
+
+
+// Float
+// --------------------
+.float--left {  float:left !important; }
+.float--right { float:right !important; }
+
+
+// Color
+// --------------------
+.color-success {  color: $success-color !important; }
+.color-danger {   color: $danger-color !important; }
+.color-warning {  color: $warning-color !important; }
+.color-muted {    color: $gray !important; }
+
+
+// Background Color
+// --------------------
+.bg-success { background-color: lighten($success-color, 45%) !important; }
+.bg-danger { background-color: lighten($danger-color, 45%) !important; }
+.bg-warning { background-color: lighten($warning-color, 45%) !important; }
+
+
+// Margin
+// --------------------
+@each $prefix in $margin-list {
+ .mgn#{$prefix}{ margin:         #{$prefix}px !important; }
+ .mt#{$prefix} { margin-top:     #{$prefix}px !important; }
+ .mb#{$prefix} { margin-bottom:  #{$prefix}px !important; }
+ .ml#{$prefix} { margin-left:    #{$prefix}px !important; }
+ .mr#{$prefix} { margin-right:   #{$prefix}px !important; }
+ .pdn#{$prefix}{ padding:        #{$prefix}px !important; }
+ .pt#{$prefix} { padding-top:    #{$prefix}px !important; }
+ .pb#{$prefix} { padding-bottom: #{$prefix}px !important; }
+ .pl#{$prefix} { padding-left:   #{$prefix}px !important; }
+ .pr#{$prefix} { padding-right:  #{$prefix}px !important; }
+}

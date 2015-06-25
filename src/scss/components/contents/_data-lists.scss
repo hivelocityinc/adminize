@@ -1,0 +1,82 @@
+//
+// Data List
+// ------------------------------------------------------------
+
+.data-list {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid $border-light-color;;
+  &.col2 {
+    .data-list__title {
+      width: 15%;
+    }
+    .data-list__body {
+      width: 35%;
+    }
+  }
+  &.col2--50 {
+    width: 50%;
+    .data-list__title {
+      width: 30%;
+    }
+    .data-list__body {
+      width: 70%;
+    }
+  }
+}
+* > .data-list:last-child {
+  border-bottom: none;
+}
+.data-list__title,
+.data-list__body {
+  display: table-cell;
+  padding: 23px 20px;
+  vertical-align: middle;
+}
+.data-list__title {
+  width: 20%;
+  border-right: 1px dashed $border-light-color;
+  color: $black;
+  font-weight: bold;
+  text-align: right;
+}
+.data-list__body {
+  width: 80%;
+  margin: 0;
+}
+.data-list__body + .data-list__title {
+  border-left: 1px solid $border-light-color;
+}
+
+@include mobile {
+  .data-list {
+    display: block;
+    &.col2--50,
+    &.col2 {
+      .data-list__title,
+      .data-list__body {
+        width: 100%;
+      }
+    }
+    &.col2--50 {
+      width: 100%;
+    }
+  }
+  .data-list__title,
+  .data-list__body {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .data-list__title {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    border-right: none;
+    border-bottom: 1px dashed $border-light-color;
+  }
+  .data-list__body + .data-list__title {
+    border-top: 1px solid $border-light-color;
+    border-left: none;
+  }
+}

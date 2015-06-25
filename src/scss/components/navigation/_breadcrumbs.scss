@@ -1,0 +1,36 @@
+//
+// Breadcrumbs
+// ------------------------------------------------------------
+
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  letter-spacing: -.4em;
+}
+.breadcrumbs__list {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 12px;
+  letter-spacing: normal;
+  a {
+    display: block;
+    position: relative;
+    padding-right: 14px;
+    font-weight: bold;
+    &:after {
+      position: absolute;
+      right: 0;
+      color: $gray;
+      font-size: $base-font-size;
+      font-weight: normal;
+      @include fontawesome("\f105");
+    }
+  }
+}
+@include mobile {
+  .breadcrumbs {
+    display: none;
+  }
+}

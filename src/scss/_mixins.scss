@@ -1,0 +1,27 @@
+//
+// Mixins
+// ------------------------------------------------------------
+
+
+// Media Query
+// --------------------
+@mixin tablet {
+  @media only screen and (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+
+// FontAwesome
+// --------------------
+@mixin fontawesome($content) {
+  content: $content;
+  font-family: $icon-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

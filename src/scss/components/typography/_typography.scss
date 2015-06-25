@@ -1,0 +1,103 @@
+//
+// Typography
+// ------------------------------------------------------------
+
+
+// Anchor
+// ------------------------------
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: $base-transition;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Horizontal
+// ------------------------------
+hr {
+  margin: 25px 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px dotted $border-light-color;
+  border-left: none;
+  background: none;
+}
+
+// Heading
+// ------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+* > h1:first-child,
+* > h2:first-child,
+* > h3:first-child {
+  margin-top: 0;
+}
+h1 { font-size: 26px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 13px; }
+
+// Paragraph
+// ------------------------------
+p {
+  margin: 0 0 15px 0;
+}
+
+// Other
+// ------------------------------
+small {
+  font-size: 12px;
+}
+blockquote {
+  margin: 15px 0;
+  padding: 8px 15px;
+  border-left: 4px solid $border-light-color;
+  color: $gray-dark;
+}
+code {
+  background-color: $gray-white;
+  padding: 2px 6px;
+  margin: 0 4px;
+  border-radius: $base-radius;
+}
+
+// Styled Heading
+// ------------------------------
+.page-header {
+  margin: 0 0 25px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba($black, .05);
+  color: $black;
+  font-size: 24px;
+  .fa {
+    margin-right: 10px;
+    font-size: 23px;
+  }
+}
+.sub-header {
+  margin-bottom: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed rgba($black, .2);
+}
+@include mobile {
+  .page-header {
+    margin-bottom: 15px;
+  }
+}

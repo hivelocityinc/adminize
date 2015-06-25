@@ -1,0 +1,60 @@
+//
+// Table
+// ------------------------------------------------------------
+
+
+.table {
+  width: 100%;
+  border: 1px solid $border-color;
+  background-color: $white;
+  thead {
+    border-bottom: 3px double $border-light-color;
+    th,
+    td {
+      padding-top: 14px;
+    }
+  }
+  tr {
+    border-bottom: 1px dotted $border-light-color;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  th,
+  td {
+    padding: 12px 25px;
+    &.area-btn {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      text-align: right;
+    }
+  }
+  th {
+    text-align: left;
+  }
+}
+.table--panel {
+  border: none;
+  thead {
+    border-bottom-width: 2px;
+  }
+}
+.table--striped {
+  tr {
+    &:nth-child(2n) {
+      background-color: $white-gray;
+    }
+  }
+}
+.table--bordered {
+  tr {
+    border-bottom-style: solid;
+  }
+  th,
+  td {
+    border-right: 1px solid $border-light-color;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

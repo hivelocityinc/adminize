@@ -1,0 +1,50 @@
+
+.tab {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  margin-bottom: -1px;
+  padding: 0;
+  letter-spacing: -.4em;
+  & > li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    margin-left: -1px;
+    border: 1px solid $border-color;
+    background-color: $white;
+    letter-spacing: normal;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.is-active {
+      border-bottom-color: $white;
+      a {
+        background-color: $white;
+        color: $black;
+        cursor: default;
+      }
+    }
+  }
+  a {
+    display: block;
+    padding: 10px 15px;
+    background-color: $white-gray;
+    &:hover {
+      background-color: $gray-white;
+      text-decoration: none;
+    }
+  }
+}
+
+.tab-content {
+  padding: 20px 25px;
+  border: 1px solid $border-color;
+  background-color: $white;
+}
+.tab-pane {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}

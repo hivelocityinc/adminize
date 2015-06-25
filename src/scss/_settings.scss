@@ -1,0 +1,45 @@
+//
+// Variable settings
+// ------------------------------------------------------------
+
+
+$black:                   #000 !default;
+$gray-darker:             #333 !default;
+$gray-dark:               #666 !default;
+$gray:                    #888 !default;
+$gray-light:              #ccc !default;
+$gray-lighter:            #ddd !default;
+$gray-white:              #f1f1f1 !default;
+$white-gray:              #f9f9f9 !default;
+$white:                   #fff !default;
+
+$primary-color:           #4882b6 !default;
+$success-color:           #60a144 !default;
+$danger-color:            #c24640 !default;
+$warning-color:           #cf9c30 !default;
+
+$head-color:              #3a3d3c !default;
+$sidebar-color:           #4d5250 !default;
+$border-color:            #ccc !default;
+$border-light-color:      lighten($border-color, 8%) !default;
+$text-color:              $gray-darker;
+$bg-color:                #eee !default;
+
+$base-font-size:          14px !default;
+$base-line-height:        1.5em !default;
+$base-font-family:        "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif !default;
+$mono-font-family:        Verdana !default;
+$icon-font-family:        FontAwesome !default;
+$header-height:           60px !default;
+$sidebar-width:           260px !default;
+$btn-height:              40px !default;
+$input-style-size:        24px !default;
+
+$head-zindex:             20 !default;
+$content-zindex:          30 !default;
+$sidebar-zindex:          40 !default;
+
+$base-radius:             3px !default;
+$base-transition:         .2s all ease !default;
+
+$margin-list:             0, 2, 3, 5, 10, 15, 20, 25, 30, 40, 50, 60;
