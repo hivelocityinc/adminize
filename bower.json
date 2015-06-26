@@ -23,7 +23,9 @@
     "*.json",
     "Gemfile",
     "Gemfile.lock",
-    "*.md"
+    "*.md",
+    "preview",
+    "clean.sh"
   ],
   "dependencies": {
     "jquery":       ">=2.1.3",

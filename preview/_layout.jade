@@ -1,0 +1,11 @@
+doctype
+html(lang="ja")
+    head
+        != partial("_includes/_head")
+    body
+        != partial("_includes/_head-bar")
+        != partial("_includes/_side-bar")
+
+        != yield
+
+        != partial("_includes/_script")
