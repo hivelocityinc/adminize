@@ -6,8 +6,13 @@ div.side-bar
         div.scroll-content.js-scroll-content
             ul.side-bar__menu
                 li.side-bar__list
-                    a(href="/")
-                        i.fa.fa-gear
-                        | Dashboard
+                    span.parent__title.is-open.js-side-parent
+                      i.fa.fa-file-text.icon
+                      span Navigation
+                    ul.child-menu
+                      li.child-menu__list
+                        a(href="#") child
+                      li.child-menu__list
+                        a(href="#") child
         div.scroll-pane.js-scroll-pane
             div.scroll-slider.js-scroll-slider

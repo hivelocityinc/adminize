@@ -92,6 +92,13 @@
         content: "\f077";
       }
     }
+    &.disabled {
+      cursor: default;
+      pointer-events: none;
+      &:before {
+        content: "";
+      }
+    }
   }
   .fa {
     position: absolute;
@@ -122,8 +129,8 @@
         pointer-events: none;
       }
     }
-    & > .parent__title {
-      cursor: pointer;
+    & > .disabled {
+      cursor: default;
     }
   }
 }

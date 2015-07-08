@@ -1157,6 +1157,11 @@ select {
       display: block; }
     .side-bar__list .parent__title.is-open:before {
       content: "\f077"; }
+    .side-bar__list .parent__title.disabled {
+      cursor: default;
+      pointer-events: none; }
+      .side-bar__list .parent__title.disabled:before {
+        content: ""; }
   .side-bar__list .fa {
     position: absolute;
     top: 50%;
@@ -1181,8 +1186,8 @@ select {
       border-right-color: #eee;
       content: "";
       pointer-events: none; }
-  .side-bar__list.is-active > .parent__title {
-    cursor: pointer; }
+  .side-bar__list.is-active > .disabled {
+    cursor: default; }
 
 .child-menu {
   display: none; }
