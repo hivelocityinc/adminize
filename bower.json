@@ -24,7 +24,7 @@
     "Gemfile",
     "Gemfile.lock",
     "*.md",
-    "preview",
+    "test",
     "clean.sh"
   ],
   "dependencies": {
