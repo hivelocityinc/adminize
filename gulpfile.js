@@ -32,8 +32,7 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
-        .pipe(gulp.dest('css'))
-        .pipe(gulp.dest('docs/public/assets/css'));
+        .pipe(gulp.dest('css'));
 });
 
 
