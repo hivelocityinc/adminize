@@ -1534,3 +1534,30 @@ select {
   display: none; }
   .tab-pane.is-active {
     display: block; }
+
+.pills {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  letter-spacing: -.4em; }
+  .pills li {
+    display: inline-block;
+    letter-spacing: normal;
+    position: relative;
+    margin-right: 8px; }
+    .pills li.is-active a {
+      background-color: #4882b6;
+      color: #fff;
+      font-weight: bold;
+      cursor: default; }
+  .pills a {
+    padding: 0 15px;
+    display: block;
+    background-color: transparent;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    color: #333; }
+    .pills a:hover {
+      text-decoration: none;
+      background-color: #dadada; }

@@ -5,7 +5,9 @@ html(lang="ja")
     body
         != partial("_includes/_head-bar")
         != partial("_includes/_side-bar")
-
-        != yield
+        
+        div.main-contents
+          div.main-contents__body
+            != yield
 
         != partial("_includes/_script")

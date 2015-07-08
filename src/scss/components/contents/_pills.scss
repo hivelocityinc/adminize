@@ -1,0 +1,34 @@
+.pills {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  letter-spacing: -.4em;
+  li {
+    display: inline-block;
+    letter-spacing: normal;
+    position: relative;
+    margin-right: 8px;
+    &.is-active {
+      a {
+        background-color: $primary-color;
+        color: $white;
+        font-weight: bold;
+        cursor: default;
+      }
+    }
+  }
+  a {
+    $pills-height: 34px;
+    padding: 0 15px;
+    display: block;
+    background-color: transparent;
+    height: $pills-height;
+    line-height: $pills-height;
+    border-radius: $pills-height / 2;
+    color: $text-color;
+    &:hover {
+      text-decoration: none;
+      background-color: darken($bg-color, 8%);
+    }
+  }
+}
