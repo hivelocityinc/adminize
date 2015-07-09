@@ -19,18 +19,26 @@
   height: $header-height;
   border-bottom: 1px solid darken($head-color, 5%);
   background-color: $head-color;
-  .site-name {
-    a {
-      display: inline-block;
-      padding: 0 15px;
-      color: $white;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: $header-height;
-      &:hover {
-        text-decoration: none;
-      }
+}
+.site-name {
+  a {
+    display: inline-block;
+    padding: 0 15px;
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: $header-height;
+    &:hover {
+      text-decoration: none;
     }
+  }
+  img {
+    width: auto;
+    height: $header-logo-size;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -5px;
+    margin-right: 10px;
   }
 }
 

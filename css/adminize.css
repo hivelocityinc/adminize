@@ -1103,15 +1103,23 @@ select {
   height: 60px;
   border-bottom: 1px solid #2e302f;
   background-color: #3a3d3c; }
-  .side-bar__header .site-name a {
-    display: inline-block;
-    padding: 0 15px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 60px; }
-    .side-bar__header .site-name a:hover {
-      text-decoration: none; }
+
+.site-name a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px; }
+  .site-name a:hover {
+    text-decoration: none; }
+.site-name img {
+  width: auto;
+  height: 32px;
+  vertical-align: middle;
+  position: relative;
+  margin-top: -5px;
+  margin-right: 10px; }
 
 .side-bar__content {
   position: relative;
