@@ -1140,7 +1140,7 @@ select {
   display: block;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-  .side-bar__list a, .side-bar__list .parent__title {
+  .side-bar__list a, .side-bar__list .parent-title {
     display: block;
     position: relative;
     padding: 12px 12px 12px 46px;
@@ -1149,12 +1149,12 @@ select {
     font-weight: bold;
     cursor: pointer;
     transition: .2s all ease; }
-    .side-bar__list a:hover, .side-bar__list .parent__title:hover {
+    .side-bar__list a:hover, .side-bar__list .parent-title:hover {
       background-color: rgba(0, 0, 0, 0.1);
       text-decoration: none; }
-  .side-bar__list .parent__title {
+  .side-bar__list .parent-title {
     position: relative; }
-    .side-bar__list .parent__title:before {
+    .side-bar__list .parent-title:before {
       position: absolute;
       right: 20px;
       color: rgba(255, 255, 255, 0.5);
@@ -1162,14 +1162,14 @@ select {
       font-family: FontAwesome;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-    .side-bar__list .parent__title.is-open + .child-menu {
+    .side-bar__list .parent-title.is-open + .child-menu {
       display: block; }
-    .side-bar__list .parent__title.is-open:before {
+    .side-bar__list .parent-title.is-open:before {
       content: "\f077"; }
-    .side-bar__list .parent__title.disabled {
+    .side-bar__list .parent-title.disabled {
       cursor: default;
       pointer-events: none; }
-      .side-bar__list .parent__title.disabled:before {
+      .side-bar__list .parent-title.disabled:before {
         content: ""; }
   .side-bar__list .fa {
     position: absolute;

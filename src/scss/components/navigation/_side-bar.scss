@@ -70,7 +70,7 @@
   margin: 0;
   border-bottom: 1px solid rgba($black,.15);
   a,
-  .parent__title {
+  .parent-title {
     display: block;
     position: relative;
     padding: 12px 12px 12px 46px;
@@ -84,7 +84,7 @@
       text-decoration: none;
     }
   }
-  .parent__title {
+  .parent-title {
     position: relative;
     &:before {
       position: absolute;
