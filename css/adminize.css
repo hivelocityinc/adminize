@@ -192,25 +192,25 @@ input, button, select, textarea {
 .float--right {
   float: right !important; }
 
-.color-success {
+.color--success {
   color: #60a144 !important; }
 
-.color-danger {
+.color--danger {
   color: #c24640 !important; }
 
-.color-warning {
+.color--warning {
   color: #cf9c30 !important; }
 
-.color-muted {
+.color--muted {
   color: #888 !important; }
 
-.bg-success {
+.bg--success {
   background-color: #e1f0db !important; }
 
-.bg-danger {
+.bg--danger {
   background-color: #faeeee !important; }
 
-.bg-warning {
+.bg--warning {
   background-color: #faf5ea !important; }
 
 .mgn0 {
