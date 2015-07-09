@@ -1177,12 +1177,12 @@ select {
     left: 15px;
     margin-top: -10px;
     font-size: 17px; }
-  .side-bar__list.is-active > a, .side-bar__list.is-active > .parent__title {
+  .side-bar__list.is-active > a, .side-bar__list.is-active > .parent-title {
     position: relative;
     background-color: #4882b6;
     color: #fff;
     cursor: default; }
-    .side-bar__list.is-active > a:after, .side-bar__list.is-active > .parent__title:after {
+    .side-bar__list.is-active > a:after, .side-bar__list.is-active > .parent-title:after {
       position: absolute;
       top: 50%;
       right: 0;

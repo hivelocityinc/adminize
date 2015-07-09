@@ -117,7 +117,7 @@
   }
   &.is-active {
     & > a,
-    & > .parent__title {
+    & > .parent-title {
       position: relative;
       background-color: $primary-color;
       color: $white;
