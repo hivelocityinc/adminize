@@ -215,6 +215,7 @@ select {
     font-size: 16px;
     text-align: center;
     line-height: 40px;
+    pointer-events: none;
     @include fontawesome("\f0d7");
   }
 }
