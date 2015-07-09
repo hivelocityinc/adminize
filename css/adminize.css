@@ -1205,9 +1205,12 @@ select {
   .child-menu__list a {
     padding: 8px 15px;
     background-color: #3e4241;
-    font-size: 13px; }
+    font-size: 13px;
+    color: #ccc; }
     .child-menu__list a:hover {
       background-color: #393d3b; }
+  .child-menu__list.is-active a {
+    color: #fff; }
 
 .scroll-wrap {
   position: relative;

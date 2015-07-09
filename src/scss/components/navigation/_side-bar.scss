@@ -151,8 +151,14 @@
     padding: 8px 15px;
     background-color: darken($sidebar-color, 6%);
     font-size: 13px;
+    color: $gray-light;
     &:hover {
       background-color: darken($sidebar-color, 8%);
+    }
+  }
+  &.is-active {
+    a {
+      color: $white;
     }
   }
 }
