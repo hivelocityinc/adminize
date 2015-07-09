@@ -1,12 +1,19 @@
 .page-login {
   background-color: $sidebar-color;
+  padding: 50px 0 20px 0;
 }
 .login {
-
-  max-width: 400px;
-  margin: 50px auto 20px auto;
-  background-color: $white;
+  width: 400px;
+  margin: 0 auto;
+}
+.login__wrap {
   box-shadow: 0 6px 20px rgba(0,0,0,.2);
+}
+.login__logo {
+  color: $white;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: bold;
 }
 .login__head {
   position: relative;
@@ -22,6 +29,9 @@
   .fa {
     margin-right: 10px;
   }
+}
+.login__body {
+  background-color: $white;
 }
 .login__list {
   padding: 20px 20px 0 20px;
@@ -41,10 +51,23 @@
   background-color: $gray-white;
   box-shadow: 0px 1px 3px rgba(0,0,0,.05) inset;
 }
-
-@include mobile {
-  .login {
-    margin: 15px;
+.login__caps {
+  margin: 15px 0 0 0;
+  font-size: 13px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: $white;
   }
 }
 
+@include mobile {
+  .page-login {
+    padding: 20px 15px;
+  }
+  .login {
+    margin: 0;
+    width: 100%;
+  }
+}

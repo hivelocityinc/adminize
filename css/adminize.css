@@ -1334,13 +1334,21 @@ select {
     padding: 15px; } }
 
 .page-login {
-  background-color: #4d5250; }
+  background-color: #4d5250;
+  padding: 50px 0 20px 0; }
 
 .login {
-  max-width: 400px;
-  margin: 50px auto 20px auto;
-  background-color: #fff;
+  width: 400px;
+  margin: 0 auto; }
+
+.login__wrap {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
+
+.login__logo {
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: bold; }
 
 .login__head {
   position: relative;
@@ -1355,6 +1363,9 @@ select {
   font-size: 18px; }
   .login__title .fa {
     margin-right: 10px; }
+
+.login__body {
+  background-color: #fff; }
 
 .login__list {
   padding: 20px 20px 0 20px; }
@@ -1373,9 +1384,20 @@ select {
   background-color: #f1f1f1;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset; }
 
+.login__caps {
+  margin: 15px 0 0 0;
+  font-size: 13px; }
+  .login__caps p {
+    margin: 0; }
+  .login__caps a {
+    color: #fff; }
+
 @media only screen and (max-width: 800px) {
+  .page-login {
+    padding: 20px 15px; }
   .login {
-    margin: 15px; } }
+    margin: 0;
+    width: 100%; } }
 
 .panel--simple {
   padding: 20px; }

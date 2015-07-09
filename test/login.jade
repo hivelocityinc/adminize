@@ -1,0 +1,15 @@
+div.login
+  div.login__logo: h2 Some Admin
+  div.login__wrap
+    div.login__head
+      h1.login__title
+        i.fa.fa-sign-in
+        | Login
+    div.login__body
+      div.login__list
+        label(for="email", class="login__label") E-Mail
+        input(type="text", placeholder="me@mail.com", id="email")
+    div.login__foot
+      ul(class="list-btn align--center")
+        li: a(href="/", class="btn btn--success") Login
+  div.login__caps: p: a(href="#") Forget password
