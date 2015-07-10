@@ -928,8 +928,10 @@ select {
     font-size: 14px; }
 
 .btn--large {
-  padding: 0 40px;
-  font-size: 18px; }
+  padding: 14px 40px;
+  font-size: 17px; }
+  .btn--large .fa {
+    font-size: 17px; }
 
 .flash-msg {
   position: relative;
