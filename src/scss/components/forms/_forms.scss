@@ -165,6 +165,7 @@ input[type=checkbox] {
 // ------------------------------
 select {
   cursor: pointer;
+  font-family: $base-font-family;
   &:disabled {
     cursor: not-allowed;
   }

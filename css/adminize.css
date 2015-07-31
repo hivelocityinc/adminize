@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -815,7 +816,8 @@ input[type=radio], input[type=checkbox] {
     top: 0; } }
 
 select {
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; }
   select:disabled {
     cursor: not-allowed; }
 
