@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "setup": "gulp setup",
-    "clean": "sh clean.sh",
     "watch": "gulp watch",
     "develop": "gulp develop",
     "docs": "harp server docs --port 9999"
