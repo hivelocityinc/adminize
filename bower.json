@@ -6,6 +6,10 @@
     "Ryuichi Komeda <komeda@hivelocity.co.jp>"
   ],
   "description": "CSS framework for admin",
+  "main": [
+    "css/adminize.css",
+    "js/adminize.js"
+  ],
   "keywords": [
     "adminize",
     "html",
