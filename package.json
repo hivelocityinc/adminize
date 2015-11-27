@@ -20,6 +20,7 @@
     "admin",
     "template"
   ],
+  "homepage": "https://gitlab.hivelocity.co.jp/adminize/adminize",
   "authors": [
     "Ryuichi Komeda <komeda@hivelocity.co.jp>"
   ],
