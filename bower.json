@@ -1,9 +1,9 @@
 {
   "name": "adminize",
   "version": "0.1.0",
-  "homepage": "https://github.com/adminize/adminize",
+  "homepage": "",
   "authors": [
-    "rayfields <raysbacker@gmail.com>"
+    "Ryuichi Komeda <komeda@hivelocity.co.jp>"
   ],
   "description": "CSS framework for admin",
   "keywords": [
