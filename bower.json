@@ -25,11 +25,8 @@
     "src",
     "*/.*",
     "*.json",
-    "Gemfile",
-    "Gemfile.lock",
     "*.md",
-    "test",
-    "clean.sh"
+    "test"
   ],
   "dependencies": {
     "jquery":       ">=2.1.3",
