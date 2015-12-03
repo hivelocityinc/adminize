@@ -9,7 +9,6 @@ var gulp            = require('gulp'),
     rename          = require('gulp-rename'),
     uglify          = require('gulp-uglify'),
     plumber         = require('gulp-plumber'),
-    webserver       = require('gulp-webserver'),
     autoprefixer    = require('gulp-autoprefixer');
 
 
@@ -52,14 +51,5 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('webserver', function () {
-    gulp.src('./')
-        .pipe(webserver({
-            port: 8888,
-            livereload: true
-        }));
-});
-
-gulp.task('setup', ['styles', 'script']);
-gulp.task('develop', ['setup', 'webserver', 'watch']);
+gulp.task('serve', ['styles', 'script', 'watch']);
 gulp.task('default', ['watch']);
