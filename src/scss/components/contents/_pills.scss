@@ -1,31 +1,31 @@
 .pills {
-  list-style: none;
-  margin: 0 0 20px 0;
   padding: 0;
+  margin: 0 0 20px;
   letter-spacing: -.4em;
+  list-style: none;
   li {
-    display: inline-block;
-    letter-spacing: normal;
     position: relative;
+    display: inline-block;
     margin-right: 8px;
+    letter-spacing: normal;
     &.is-active {
       a {
-        background-color: $primary-color;
-        color: $white;
         font-weight: bold;
+        color: $white;
         cursor: default;
+        background-color: $primary-color;
       }
     }
   }
   a {
     $pills-height: 34px;
-    padding: 0 15px;
     display: block;
-    background-color: transparent;
     height: $pills-height;
+    padding: 0 15px;
     line-height: $pills-height;
-    border-radius: $pills-height / 2;
     color: $text-color;
+    background-color: transparent;
+    border-radius: $pills-height / 2;
     &:hover {
       text-decoration: none;
       background-color: darken($bg-color, 8%);

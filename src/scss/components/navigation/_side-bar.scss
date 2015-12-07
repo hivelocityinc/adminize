@@ -17,28 +17,28 @@
 }
 .side-bar__header {
   height: $header-height;
-  border-bottom: 1px solid darken($head-color, 5%);
   background-color: $head-color;
+  border-bottom: 1px solid darken($head-color, 5%);
 }
 .site-name {
   a {
     display: inline-block;
     padding: 0 15px;
-    color: $white;
     font-size: 18px;
     font-weight: bold;
     line-height: $header-height;
+    color: $white;
     &:hover {
       text-decoration: none;
     }
   }
   img {
+    position: relative;
     width: auto;
     height: $header-logo-size;
-    vertical-align: middle;
-    position: relative;
     margin-top: -5px;
     margin-right: 10px;
+    vertical-align: middle;
   }
 }
 
@@ -48,8 +48,8 @@
 }
 .side-bar__menu,
 .child-menu {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 @include tablet {
@@ -57,7 +57,7 @@
     left: -$sidebar-width;
   }
   .is-sidebar-open {
-    .side-bar{
+    .side-bar {
       left: 0;
     }
   }
@@ -71,39 +71,39 @@
   border-bottom: 1px solid rgba($black,.15);
   a,
   .parent-title {
-    display: block;
     position: relative;
+    display: block;
     padding: 12px 12px 12px 46px;
-    color: $gray-lighter;
     font-size: 14px;
     font-weight: bold;
+    color: $gray-lighter;
     cursor: pointer;
     transition: $base-transition;
     &:hover {
-      background-color: rgba($black,.1);
       text-decoration: none;
+      background-color: rgba($black,.1);
     }
   }
   .parent-title {
     position: relative;
-    &:before {
+    &::before {
       position: absolute;
       right: 20px;
       color: rgba($white, .5);
       @include fontawesome("\f078");
     }
     &.is-open {
-      & + .child-menu {
+      + .child-menu {
         display: block;
       }
-      &:before {
+      &::before {
         content: "\f077";
       }
     }
     &.disabled {
-      cursor: default;
       pointer-events: none;
-      &:before {
+      cursor: default;
+      &::before {
         content: "";
       }
     }
@@ -116,28 +116,28 @@
     font-size: 17px;
   }
   &.is-active {
-    & > a,
-    & > .parent-title {
+    > a,
+    > .parent-title {
       position: relative;
-      background-color: $primary-color;
       color: $white;
       cursor: default;
-      &:after {
+      background-color: $primary-color;
+      &::after {
         position: absolute;
         top: 50%;
         right: 0;
         width: 0;
         height: 0;
         margin-top: -10px;
-        border-width: 10px;
-        border-style: solid;
-        border-color: rgba($bg-color, 0);
-        border-right-color: $bg-color;
-        content: "";
         pointer-events: none;
+        content: "";
+        border-color: rgba($bg-color, 0);
+        border-style: solid;
+        border-width: 10px;
+        border-right-color: $bg-color;
       }
     }
-    & > .disabled {
+    > .disabled {
       cursor: default;
     }
   }
@@ -149,9 +149,9 @@
   margin: 0;
   a {
     padding: 8px 15px;
-    background-color: darken($sidebar-color, 6%);
     font-size: 13px;
     color: $gray-light;
+    background-color: darken($sidebar-color, 6%);
     &:hover {
       background-color: darken($sidebar-color, 8%);
     }
@@ -171,7 +171,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  & > .scroll-content {
+  > .scroll-content {
     position: absolute;
     top: 0;
     right: 0;
@@ -183,20 +183,20 @@
       outline: thin dotted;
     }
   }
-  & > .scroll-content::-webkit-scrollbar {
+  > .scroll-content::-webkit-scrollbar {
     display: none;
   }
-  & > .scroll-pane {
+  > .scroll-pane {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 10px;
-    border-radius: $base-radius;
     background: rgba(0,0,0,0);
+    border-radius: $base-radius;
     opacity: .01;
     transition: $base-transition;
-    & > .scroll-slider {
+    > .scroll-slider {
       position: relative;
       margin: 0 1px;
       background: rgba(0,0,0,.3);
@@ -204,10 +204,10 @@
     }
   }
   &:hover {
-    & > .scroll-pane,
+    > .scroll-pane,
     .scroll-pane.active,
     .scroll-pane.flashed {
-      opacity    : 0.99;
+      opacity: 0.99;
     }
   }
 }

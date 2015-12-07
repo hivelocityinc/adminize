@@ -6,7 +6,7 @@
   display: table;
   width: 100%;
   margin: 0;
-  border-bottom: 1px solid $border-light-color;;
+  border-bottom: 1px solid $border-light-color;
   &.col2 {
     .data-list__title {
       width: 15%;
@@ -26,7 +26,7 @@
   }
 }
 * > .data-list:last-child {
-  border-bottom: none;
+  border-bottom: 0;
 }
 .data-list__title,
 .data-list__body {
@@ -36,10 +36,10 @@
 }
 .data-list__title {
   width: 20%;
-  border-right: 1px dashed $border-light-color;
-  color: $black;
   font-weight: bold;
+  color: $black;
   text-align: right;
+  border-right: 1px dashed $border-light-color;
 }
 .data-list__body {
   width: 80%;
@@ -72,11 +72,11 @@
   .data-list__title {
     padding-top: 12px;
     padding-bottom: 10px;
-    border-right: none;
+    border-right: 0;
     border-bottom: 1px dashed $border-light-color;
   }
   .data-list__body + .data-list__title {
     border-top: 1px solid $border-light-color;
-    border-left: none;
+    border-left: 0;
   }
 }

@@ -7,8 +7,8 @@
   box-sizing: border-box;
   outline: 0;
 }
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -22,10 +22,10 @@ html {
   -webkit-tap-highlight-color: rgba($black, 0);
 }
 body {
-  background-color: $bg-color;
-  color: $text-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  color: $text-color;
+  background-color: $bg-color;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }

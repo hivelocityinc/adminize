@@ -18,13 +18,13 @@ input[type=text],
 input[type=password],
 textarea {
   width: 100%;
-  padding: 8px 12px 7px 12px;
+  padding: 8px 12px 7px;
+  background: $white;
   border: 2px solid $border-light-color;
   border-radius: $base-radius;
-  background: $white;
   outline: 0;
-  -webkit-appearance: none;
   transition: $base-transition;
+  -webkit-appearance: none;
   &:focus {
     border-color: $primary-color;
   }
@@ -38,21 +38,21 @@ textarea {
     max-width: 300px;
   }
   &.input--success {
-    border-color: $success-color;
     background-color: lighten($success-color, 48%);
+    border-color: $success-color;
   }
   &.input--danger {
-    border-color: $danger-color;
     background-color: lighten($danger-color, 45%);
+    border-color: $danger-color;
   }
   &.input--warning {
-    border-color: $warning-color;
     background-color: lighten($warning-color, 45%);
+    border-color: $warning-color;
   }
   &:disabled {
-    border-color: $gray-white;
-    background-color: $gray-white;
     cursor: not-allowed;
+    background-color: $gray-white;
+    border-color: $gray-white;
   }
 }
 input[type=password] {
@@ -79,18 +79,18 @@ input[type=checkbox] {
   width: $input-style-size;
   height: $input-style-size;
   opacity: 0;
-  & + .icon {
-    display: inline-block;
+  + .icon {
     position: relative;
+    display: inline-block;
     width: $input-style-size;
     height: $input-style-size;
     margin-right: 10px;
-    border: 2px solid $border-light-color;
     vertical-align: middle;
+    border: 2px solid $border-light-color;
     transition: $base-transition;
-    &:after {
-      display: block;
+    &::after {
       position: absolute;
+      display: block;
       opacity: 0;
       transition: $base-transition;
     }
@@ -104,16 +104,16 @@ input[type=checkbox] {
   }
   &:checked + .icon {
     border-color: $primary-color;
-    &:after {
+    &::after {
       opacity: 1;
     }
   }
   &:disabled {
-    & + .icon {
+    + .icon {
       cursor: not-allowed;
       opacity: .5;
     }
-    & + .icon + * {
+    + .icon + * {
       color: $gray;
       cursor: not-allowed;
     }
@@ -124,38 +124,38 @@ input[type=checkbox] {
   }
 }
 .input--radio {
-  & + .icon {
+  + .icon {
     border-radius: 50%;
   }
-  & + .icon:after {
+  + .icon::after {
     $checked-size: ($input-style-size / 2) - 2;
     $checked-margin: (($input-style-size - 4) / 2) - ($checked-size / 2);
     top: $checked-margin;
     left: $checked-margin;
     width: $checked-size;
     height: $checked-size;
-    border-radius: 50%;
-    background-color: $primary-color;
     content: "";
+    background-color: $primary-color;
+    border-radius: 50%;
   }
 }
 .input--check {
-  & + .icon {
+  + .icon {
     border-radius: $base-radius;
   }
   &:checked + .icon {
     background-color: $primary-color;
   }
-  & + .icon:after {
+  + .icon::after {
     top: -1px;
     left: 2px;
-    color: $white;
     font-size: 13px;
+    color: $white;
     @include fontawesome("\f00c");
   }
 }
 @-moz-document url-prefix() {
-  .input--check + .icon:after {
+  .input--check + .icon::after {
     top: 0;
   }
 }
@@ -164,8 +164,8 @@ input[type=checkbox] {
 // Select
 // ------------------------------
 select {
-  cursor: pointer;
   font-family: $base-font-family;
+  cursor: pointer;
   &:disabled {
     cursor: not-allowed;
   }
@@ -181,42 +181,42 @@ select {
     width: 100%;
     height: 40px;
     padding: 0 44px 0 10px;
-    border: none;
-    border-radius: $base-radius;
-    background-color: $gray-lighter;
-    color: $text-color;
+    overflow: hidden;
     font-weight: bold;
     line-height: 40px;
-    cursor: pointer;
-    white-space: nowrap;
-    overflow: hidden;
+    color: $text-color;
     text-overflow: ellipsis;
-    transition: $base-transition;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $gray-lighter;
+    border: 0;
+    border-radius: $base-radius;
     outline: 0;
-    -webkit-appearance: none !important;
+    transition: $base-transition;
     -moz-appearance: none !important;
+    -webkit-appearance: none !important;
     &:hover {
       background-color: darken($gray-lighter, 5%);
     }
     &:disabled {
-      opacity: .4;
-      cursor: not-allowed;
       pointer-events: none;
+      cursor: not-allowed;
+      opacity: .4;
     }
   }
-  &:after {
-    display: block;
+  &::after {
     position: absolute;
     top: 0;
     right: 0;
+    display: block;
     width: 34px;
     height: 100%;
-    border-left: 1px solid $white;
-    color: $gray;
     font-size: 16px;
-    text-align: center;
     line-height: 40px;
+    color: $gray;
+    text-align: center;
     pointer-events: none;
+    border-left: 1px solid $white;
     @include fontawesome("\f0d7");
   }
 }

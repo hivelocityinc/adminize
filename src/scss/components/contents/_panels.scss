@@ -8,8 +8,8 @@
 }
 .panel {
   margin-bottom: 25px;
-  border: 1px solid $border-color;
   background-color: $white;
+  border: 1px solid $border-color;
 }
 .panel__head {
   position: relative;
@@ -19,8 +19,8 @@
 }
 .panel__title {
   margin: 0;
-  color: $black;
   font-size: 16px;
+  color: $black;
 }
 .panel--default {
   .panel__body {
@@ -29,7 +29,7 @@
 }
 .panel__foot {
   padding: 25px 20px;
-  border-top: 1px solid $border-light-color;
   background-color: $white-gray;
+  border-top: 1px solid $border-light-color;
   box-shadow: 0 1px 3px rgba(0,0,0,.05) inset;
 }

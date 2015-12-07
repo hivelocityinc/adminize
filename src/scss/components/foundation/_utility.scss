@@ -6,15 +6,14 @@
 // Clearfix
 // --------------------
 .clearfix {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     display: table;
     content: " ";
   }
-  &:after {
+  &::after {
     clear: both;
   }
-  *zoom: 1;
 }
 
 
@@ -27,8 +26,8 @@
 
 // Float
 // --------------------
-.float--left {  float:left !important; }
-.float--right { float:right !important; }
+.float--left {  float: left !important; }
+.float--right { float: right !important; }
 
 
 // Color
@@ -49,14 +48,14 @@
 // Margin
 // --------------------
 @each $prefix in $margin-list {
- .mgn#{$prefix}{ margin:         #{$prefix}px !important; }
- .mt#{$prefix} { margin-top:     #{$prefix}px !important; }
- .mb#{$prefix} { margin-bottom:  #{$prefix}px !important; }
- .ml#{$prefix} { margin-left:    #{$prefix}px !important; }
- .mr#{$prefix} { margin-right:   #{$prefix}px !important; }
- .pdn#{$prefix}{ padding:        #{$prefix}px !important; }
- .pt#{$prefix} { padding-top:    #{$prefix}px !important; }
- .pb#{$prefix} { padding-bottom: #{$prefix}px !important; }
- .pl#{$prefix} { padding-left:   #{$prefix}px !important; }
- .pr#{$prefix} { padding-right:  #{$prefix}px !important; }
+  .mgn#{$prefix} { margin:         #{$prefix}px !important; }
+  .mt#{$prefix} {  margin-top:     #{$prefix}px !important; }
+  .mb#{$prefix} {  margin-bottom:  #{$prefix}px !important; }
+  .ml#{$prefix} {  margin-left:    #{$prefix}px !important; }
+  .mr#{$prefix} {  margin-right:   #{$prefix}px !important; }
+  .pdn#{$prefix} { padding:        #{$prefix}px !important; }
+  .pt#{$prefix} {  padding-top:    #{$prefix}px !important; }
+  .pb#{$prefix} {  padding-bottom: #{$prefix}px !important; }
+  .pl#{$prefix} {  padding-left:   #{$prefix}px !important; }
+  .pr#{$prefix} {  padding-right:  #{$prefix}px !important; }
 }

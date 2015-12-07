@@ -1,28 +1,28 @@
 
 .tab {
-  list-style: none;
   position: relative;
+  padding: 0;
   margin: 0;
   margin-bottom: -1px;
-  padding: 0;
   letter-spacing: -.4em;
-  & > li {
-    display: inline-block;
+  list-style: none;
+  > li {
     position: relative;
+    display: inline-block;
     margin: 0;
     margin-left: -1px;
-    border: 1px solid $border-color;
-    background-color: $white;
     letter-spacing: normal;
+    background-color: $white;
+    border: 1px solid $border-color;
     &:first-child {
       margin-left: 0;
     }
     &.is-active {
       border-bottom-color: $white;
       a {
-        background-color: $white;
         color: $black;
         cursor: default;
+        background-color: $white;
       }
     }
   }
@@ -31,16 +31,16 @@
     padding: 10px 15px;
     background-color: $white-gray;
     &:hover {
-      background-color: $gray-white;
       text-decoration: none;
+      background-color: $gray-white;
     }
   }
 }
 
 .tab-content {
   padding: 20px 25px;
-  border: 1px solid $border-color;
   background-color: $white;
+  border: 1px solid $border-color;
 }
 .tab-pane {
   display: none;

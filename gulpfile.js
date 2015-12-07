@@ -4,7 +4,11 @@
 
 // Node mobules
 var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+var $    = require('gulp-load-plugins')({
+  rename: {
+    'gulp-scss-lint': 'scsslint'
+  }
+});
 
 // Config
 var config = {
@@ -29,6 +33,18 @@ gulp.task('styles', function () {
     }))
     .pipe(gulp.dest('css'))
 });
+
+gulp.task('scsslint', function () {
+  return gulp.src([
+      './src/scss/**/*.scss',
+      '!./src/scss/adminize.scss',
+      '!./src/scss/components/foundation/_normalize.scss'
+    ])
+    .pipe($.scsslint({
+      'config': '.scss-lint.yml'
+    }));
+});
+
 
 gulp.task('minify', function () {
   return gulp.src('./src/scss/adminize.scss')
@@ -56,9 +72,9 @@ gulp.task('script', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(config.style, ['styles', 'minify']);
+  gulp.watch(config.style, ['scsslint', 'styles', 'minify']);
   gulp.watch(config.script, ['script']);
 });
 
 
-gulp.task('default', ['styles', 'minify', 'script', 'watch']);
+gulp.task('default', ['scsslint', 'styles', 'minify', 'script', 'watch']);

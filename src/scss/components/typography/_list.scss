@@ -7,8 +7,8 @@
 // --------------------
 ul,
 ol {
-  margin: 15px 0 15px 18px;
   padding: 0;
+  margin: 15px 0 15px 18px;
 }
 ul {
   ul {
@@ -26,9 +26,9 @@ li {
 .list-unstyled,
 .list-inline,
 .list-btn {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .list + .list {
   margin-top: 10px;

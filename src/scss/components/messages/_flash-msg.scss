@@ -5,24 +5,24 @@
 
 .flash-msg {
   position: relative;
-  margin: 0 0 20px 0;
   padding: 15px 25px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  background-color: $white;
   border: 1px solid $border-light-color;
   border-radius: $base-radius;
-  background-color: $white;
-  font-weight: bold;
-  & > p {
+  > p {
     margin: 0;
   }
-  & > .close {
+  > .close {
     position: absolute;
     top: 13px;
     right: 10px;
-    border: none;
     background: none;
+    border: 0;
     opacity: .5;
     transition: $base-transition;
-    &:before {
+    &::before {
       font-size: 20px;
       font-weight: normal;
       @include fontawesome("\f00d");
@@ -32,18 +32,18 @@
     }
   }
   &.success {
-    border-color: lighten($success-color, 30%);
-    background-color: lighten($success-color, 45%);
     color: darken($success-color, 10%);
+    background-color: lighten($success-color, 45%);
+    border-color: lighten($success-color, 30%);
   }
   &.danger {
-    border-color: lighten($danger-color, 30%);
-    background-color: lighten($danger-color, 45%);
     color: darken($danger-color, 10%);
+    background-color: lighten($danger-color, 45%);
+    border-color: lighten($danger-color, 30%);
   }
   &.warning {
-    border-color: lighten($warning-color, 30%);
-    background-color: lighten($warning-color, 45%);
     color: darken($warning-color, 10%);
+    background-color: lighten($warning-color, 45%);
+    border-color: lighten($warning-color, 30%);
   }
 }
