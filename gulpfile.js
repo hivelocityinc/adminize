@@ -4,7 +4,8 @@
 
 // Node mobules
 var gulp = require('gulp');
-var $    = require('gulp-load-plugins')({
+var runSequence = require('run-sequence');
+var $ = require('gulp-load-plugins')({
   rename: {
     'gulp-scss-lint': 'scsslint'
   }
@@ -72,9 +73,20 @@ gulp.task('script', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(config.style, ['scsslint', 'styles', 'minify']);
+  gulp.watch(config.style, function () {
+    return runSequence(
+      'scsslint',
+      ['styles', 'minify']
+    );
+  });
   gulp.watch(config.script, ['script']);
 });
 
 
-gulp.task('default', ['scsslint', 'styles', 'minify', 'script', 'watch']);
+gulp.task('default', function () {
+  return runSequence(
+    'scsslint',
+    ['styles', 'minify', 'script'],
+    'watch'
+  );
+});
