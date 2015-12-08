@@ -199,9 +199,8 @@ body {
   background-color: #eee;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased; }
-
-body.is-sidebar-open {
-  overflow: hidden; }
+  body.is-sidebar-open {
+    overflow: hidden; }
 
 input,
 button,
@@ -762,8 +761,8 @@ label {
   label.disabled {
     cursor: not-allowed; }
 
-input[type=text],
-input[type=password],
+[type=text],
+[type=password],
 textarea {
   width: 100%;
   padding: 8px 12px 7px;
@@ -773,53 +772,53 @@ textarea {
   outline: 0;
   transition: 0.2s all ease;
   -webkit-appearance: none; }
-  input[type=text]:focus,
-  input[type=password]:focus,
+  [type=text]:focus,
+  [type=password]:focus,
   textarea:focus {
     border-color: #4882b6; }
-  input[type=text].input--xsmall,
-  input[type=password].input--xsmall,
+  [type=text].input--xsmall,
+  [type=password].input--xsmall,
   textarea.input--xsmall {
     max-width: 80px; }
-  input[type=text].input--small,
-  input[type=password].input--small,
+  [type=text].input--small,
+  [type=password].input--small,
   textarea.input--small {
     max-width: 180px; }
-  input[type=text].input--large,
-  input[type=password].input--large,
+  [type=text].input--large,
+  [type=password].input--large,
   textarea.input--large {
     max-width: 300px; }
-  input[type=text].input--success,
-  input[type=password].input--success,
+  [type=text].input--success,
+  [type=password].input--success,
   textarea.input--success {
     background-color: #eaf4e6;
     border-color: #60a144; }
-  input[type=text].input--danger,
-  input[type=password].input--danger,
+  [type=text].input--danger,
+  [type=password].input--danger,
   textarea.input--danger {
     background-color: #faeeee;
     border-color: #c24640; }
-  input[type=text].input--warning,
-  input[type=password].input--warning,
+  [type=text].input--warning,
+  [type=password].input--warning,
   textarea.input--warning {
     background-color: #faf5ea;
     border-color: #cf9c30; }
-  input[type=text]:disabled,
-  input[type=password]:disabled,
+  [type=text]:disabled,
+  [type=password]:disabled,
   textarea:disabled {
     cursor: not-allowed;
     background-color: #f1f1f1;
     border-color: #f1f1f1; }
 
-input[type=password] {
+[type=password] {
   font-family: Verdana; }
 
 textarea {
   vertical-align: top;
   resize: vertical; }
 
-input[type=radio],
-input[type=checkbox] {
+[type=radio],
+[type=checkbox] {
   margin-right: 10px;
   outline: 0; }
 
@@ -882,14 +881,14 @@ input[type=checkbox] {
   background-color: #4882b6; }
 
 .input--check + .icon::after {
-  top: -1px;
-  left: 2px;
-  font-size: 13px;
-  color: #fff;
   content: "";
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  top: -1px;
+  left: 2px;
+  font-size: 13px;
+  color: #fff; }
 
 @-moz-document url-prefix() {
   .input--check + .icon::after {
@@ -931,6 +930,10 @@ select {
       cursor: not-allowed;
       opacity: .4; }
   .select-styled::after {
+    content: "";
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     position: absolute;
     top: 0;
     right: 0;
@@ -942,11 +945,7 @@ select {
     color: #888;
     text-align: center;
     pointer-events: none;
-    border-left: 1px solid #fff;
-    content: "";
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+    border-left: 1px solid #fff; }
 
 .btn {
   display: inline-block;
@@ -1042,12 +1041,12 @@ select {
     opacity: .5;
     transition: 0.2s all ease; }
     .flash-msg > .close::before {
-      font-size: 20px;
-      font-weight: normal;
       content: "";
       font-family: FontAwesome;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 20px;
+      font-weight: normal; }
     .flash-msg > .close:hover {
       opacity: .3; }
   .flash-msg.success {
@@ -1081,12 +1080,12 @@ select {
   text-align: center;
   cursor: pointer; }
   .head-bar__toggle::after {
-    font-size: 18px;
-    color: #fff;
     content: "";
     font-family: FontAwesome;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    color: #fff; }
 
 .user-dropdown {
   position: relative;
@@ -1252,13 +1251,13 @@ select {
   .side-bar__list .parent-title {
     position: relative; }
     .side-bar__list .parent-title::before {
-      position: absolute;
-      right: 20px;
-      color: rgba(255, 255, 255, 0.5);
       content: "";
       font-family: FontAwesome;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.5); }
     .side-bar__list .parent-title.is-open + .child-menu {
       display: block; }
     .side-bar__list .parent-title.is-open::before {
@@ -1347,7 +1346,7 @@ select {
   .scroll-wrap:hover > .scroll-pane,
   .scroll-wrap:hover .scroll-pane.active,
   .scroll-wrap:hover .scroll-pane.flashed {
-    opacity: 0.99; }
+    opacity: .99; }
 
 .has-scrollbar > .scroll-content::-webkit-scrollbar {
   display: block; }
@@ -1369,15 +1368,15 @@ select {
     padding-right: 14px;
     font-weight: bold; }
     .breadcrumbs__list a::after {
+      content: "";
+      font-family: FontAwesome;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       position: absolute;
       right: 0;
       font-size: 14px;
       font-weight: normal;
-      color: #888;
-      content: "";
-      font-family: FontAwesome;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+      color: #888; }
 
 @media only screen and (max-width: 800px) {
   .breadcrumbs {

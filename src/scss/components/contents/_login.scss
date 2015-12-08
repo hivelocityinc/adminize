@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 .login__wrap {
-  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .2);
 }
 .login__logo {
   margin: 0 0 20px;
@@ -21,7 +21,7 @@
   color: $white;
   background-color: darken($head-color, 3%);
   border-bottom: 1px solid $black;
-  box-shadow: 0 2px 3px rgba(0,0,0,.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
 }
 .login__title {
   margin: 0;
@@ -49,7 +49,7 @@
   padding: 18px 20px;
   background-color: $gray-white;
   border-top: 1px solid $border-color;
-  box-shadow: 0 1px 3px rgba(0,0,0,.05) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .05) inset;
 }
 .login__caps {
   margin: 15px 0 0;

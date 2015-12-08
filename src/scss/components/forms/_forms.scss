@@ -14,8 +14,8 @@ label {
 
 // Text
 // ------------------------------
-input[type=text],
-input[type=password],
+[type=text],
+[type=password],
 textarea {
   width: 100%;
   padding: 8px 12px 7px;
@@ -55,7 +55,7 @@ textarea {
     border-color: $gray-white;
   }
 }
-input[type=password] {
+[type=password] {
   font-family: $mono-font-family;
 }
 
@@ -67,8 +67,8 @@ textarea {
 
 // Radio & Checkbox
 // ------------------------------
-input[type=radio],
-input[type=checkbox] {
+[type=radio],
+[type=checkbox] {
   margin-right: 10px;
   outline: 0;
 }
@@ -147,11 +147,11 @@ input[type=checkbox] {
     background-color: $primary-color;
   }
   + .icon::after {
+    @include fontawesome("\f00c");
     top: -1px;
     left: 2px;
     font-size: 13px;
     color: $white;
-    @include fontawesome("\f00c");
   }
 }
 @-moz-document url-prefix() {
@@ -205,6 +205,7 @@ select {
     }
   }
   &::after {
+    @include fontawesome("\f0d7");
     position: absolute;
     top: 0;
     right: 0;
@@ -217,6 +218,5 @@ select {
     text-align: center;
     pointer-events: none;
     border-left: 1px solid $white;
-    @include fontawesome("\f0d7");
   }
 }

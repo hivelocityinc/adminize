@@ -68,7 +68,7 @@
 .side-bar__list {
   display: block;
   margin: 0;
-  border-bottom: 1px solid rgba($black,.15);
+  border-bottom: 1px solid rgba($black, .15);
   a,
   .parent-title {
     position: relative;
@@ -81,16 +81,16 @@
     transition: $base-transition;
     &:hover {
       text-decoration: none;
-      background-color: rgba($black,.1);
+      background-color: rgba($black, .1);
     }
   }
   .parent-title {
     position: relative;
     &::before {
+      @include fontawesome("\f078");
       position: absolute;
       right: 20px;
       color: rgba($white, .5);
-      @include fontawesome("\f078");
     }
     &.is-open {
       + .child-menu {
@@ -192,14 +192,14 @@
     right: 0;
     bottom: 0;
     width: 10px;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border-radius: $base-radius;
     opacity: .01;
     transition: $base-transition;
     > .scroll-slider {
       position: relative;
       margin: 0 1px;
-      background: rgba(0,0,0,.3);
+      background: rgba(0, 0, 0, .3);
       border-radius: $base-radius;
     }
   }
@@ -207,7 +207,7 @@
     > .scroll-pane,
     .scroll-pane.active,
     .scroll-pane.flashed {
-      opacity: 0.99;
+      opacity: .99;
     }
   }
 }

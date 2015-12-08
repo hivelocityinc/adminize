@@ -23,9 +23,9 @@
     opacity: .5;
     transition: $base-transition;
     &::before {
+      @include fontawesome("\f00d");
       font-size: 20px;
       font-weight: normal;
-      @include fontawesome("\f00d");
     }
     &:hover {
       opacity: .3;

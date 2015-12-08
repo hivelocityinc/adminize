@@ -28,9 +28,9 @@ body {
   background-color: $bg-color;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
-}
-body.is-sidebar-open {
-  overflow: hidden;
+  &.is-sidebar-open {
+    overflow: hidden;
+  }
 }
 
 

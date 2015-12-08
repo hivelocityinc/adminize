@@ -19,12 +19,12 @@
     padding-right: 14px;
     font-weight: bold;
     &::after {
+      @include fontawesome("\f105");
       position: absolute;
       right: 0;
       font-size: $base-font-size;
       font-weight: normal;
       color: $gray;
-      @include fontawesome("\f105");
     }
   }
 }
