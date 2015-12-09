@@ -13,14 +13,13 @@ var $ = require('gulp-load-plugins')({
 
 // Config
 var config = {
-  style:  './src/scss/**/*.scss',
-  script: './src/js/**/*.js',
-  jade:   './test/jade/**/*.jade'
+  style:  './scss/**/*.scss',
+  script: './js/adminize.js'
 };
 
 
 gulp.task('styles', function () {
-  return gulp.src('./src/scss/adminize.scss')
+  return gulp.src('./scss/adminize.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass())
@@ -37,9 +36,9 @@ gulp.task('styles', function () {
 
 gulp.task('scsslint', function () {
   return gulp.src([
-      './src/scss/**/*.scss',
-      '!./src/scss/adminize.scss',
-      '!./src/scss/components/foundation/_normalize.scss'
+      './scss/**/*.scss',
+      '!./scss/adminize.scss',
+      '!./scss/components/foundation/_normalize.scss'
     ])
     .pipe($.scsslint({
       'config': '.scss-lint.yml'
@@ -48,7 +47,7 @@ gulp.task('scsslint', function () {
 
 
 gulp.task('minify', function () {
-  return gulp.src('./src/scss/adminize.scss')
+  return gulp.src('./scss/adminize.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass())
