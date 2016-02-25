@@ -11,7 +11,6 @@
         // 初期実行
         initialize: function() {
             this.setSidebarHeight();
-            this.setScroll();
             this.setDisabled();
             this.sidebarToggle();
             this.sidebarParentMenu();
@@ -32,17 +31,6 @@
         setDisabled: function() {
             var _input = $('input:disabled');
             _input.parent('label').addClass('disabled');
-        },
-
-        // カスタムスクロールを適用
-        setScroll: function() {
-            var _scroller = $(".js-scroll-wrap");
-            _scroller.nanoScroller({
-                'contentClass': 'js-scroll-content',
-                'paneClass': 'js-scroll-pane',
-                'sliderClass': 'js-scroll-slider',
-                'preventPageScrolling': true
-            });
         },
 
         // サイドバーの開閉
@@ -150,4 +138,3 @@
     });
 
 })(jQuery);
-
