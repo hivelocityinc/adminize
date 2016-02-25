@@ -1,6 +1,6 @@
 {
   "name": "adminize",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CSS framework for admin",
   "main": "index.js",
   "scripts": {},
@@ -35,5 +35,9 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.1"
   }
 }
