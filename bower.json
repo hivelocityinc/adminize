@@ -1,7 +1,7 @@
 {
   "name": "adminize",
   "description": "CSS framework for admin",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "main": [
     "css/adminize.css",
     "js/adminize.js"
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "jquery":       ">=2.1.3",
-    "fontawesome":  ">=4.2.0",
-    "nanoscroller": ">=0.8.5"
+    "fontawesome":  ">=4.2.0"
   }
 }

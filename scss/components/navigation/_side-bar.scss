@@ -167,13 +167,16 @@
 // Navigation Scroll
 // ------------------------------
 .scroll-wrap {
-  position: relative;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
+  padding-top: $header-height;
   overflow: hidden;
   > .scroll-content {
     position: absolute;
-    top: 0;
+    top: $header-height;
     right: 0;
     bottom: 0;
     left: 0;
@@ -186,31 +189,4 @@
   > .scroll-content::-webkit-scrollbar {
     display: none;
   }
-  > .scroll-pane {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 10px;
-    background: rgba(0, 0, 0, 0);
-    border-radius: $base-radius;
-    opacity: .01;
-    transition: $base-transition;
-    > .scroll-slider {
-      position: relative;
-      margin: 0 1px;
-      background: rgba(0, 0, 0, .3);
-      border-radius: $base-radius;
-    }
-  }
-  &:hover {
-    > .scroll-pane,
-    .scroll-pane.active,
-    .scroll-pane.flashed {
-      opacity: .99;
-    }
-  }
-}
-.has-scrollbar > .scroll-content::-webkit-scrollbar {
-  display: block;
 }

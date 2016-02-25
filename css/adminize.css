@@ -217,6 +217,39 @@ textarea {
 .clearfix::after {
   clear: both; }
 
+.weight--bold {
+  font-weight: bold !important; }
+
+.weight--normal {
+  font-weight: normal !important; }
+
+.weight--100 {
+  font-weight: 100 !important; }
+
+.weight--200 {
+  font-weight: 200 !important; }
+
+.weight--300 {
+  font-weight: 300 !important; }
+
+.weight--400 {
+  font-weight: 400 !important; }
+
+.weight--500 {
+  font-weight: 500 !important; }
+
+.weight--600 {
+  font-weight: 600 !important; }
+
+.weight--700 {
+  font-weight: 700 !important; }
+
+.weight--800 {
+  font-weight: 800 !important; }
+
+.weight--900 {
+  font-weight: 900 !important; }
+
 .align--center {
   text-align: center !important; }
 
@@ -1312,13 +1345,16 @@ select {
     color: #fff; }
 
 .scroll-wrap {
-  position: relative;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
+  padding-top: 60px;
   overflow: hidden; }
   .scroll-wrap > .scroll-content {
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1328,28 +1364,6 @@ select {
       outline: thin dotted; }
   .scroll-wrap > .scroll-content::-webkit-scrollbar {
     display: none; }
-  .scroll-wrap > .scroll-pane {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 10px;
-    background: transparent;
-    border-radius: 3px;
-    opacity: .01;
-    transition: 0.2s all ease; }
-    .scroll-wrap > .scroll-pane > .scroll-slider {
-      position: relative;
-      margin: 0 1px;
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 3px; }
-  .scroll-wrap:hover > .scroll-pane,
-  .scroll-wrap:hover .scroll-pane.active,
-  .scroll-wrap:hover .scroll-pane.flashed {
-    opacity: .99; }
-
-.has-scrollbar > .scroll-content::-webkit-scrollbar {
-  display: block; }
 
 .breadcrumbs {
   padding: 0;

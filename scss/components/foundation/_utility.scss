@@ -16,6 +16,14 @@
   }
 }
 
+// Text weight
+// --------------------
+.weight--bold {    font-weight: bold !important; }
+.weight--normal {  font-weight: normal !important; }
+@each $prefix in $weight-list {
+  .weight--#{$prefix} { font-weight: #{$prefix} !important; }
+}
+
 
 // Text align
 // --------------------
