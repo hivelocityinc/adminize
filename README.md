@@ -3,8 +3,9 @@
 [![npm version](https://img.shields.io/npm/v/adminize.svg?style=flat-square)](https://www.npmjs.com/package/adminize)
 [![bower version](https://img.shields.io/bower/v/adminize.svg?style=flat-square)](https://gitlab.hivelocity.co.jp/adminize/adminize)
 
-管理画面に特化したCSSフレームワークです。
-フレーム（ヘッダー、サイドナビ、コンテンツ）とボタンやフォームのパーツ類のCSSを提供しています。
+管理画面に特化したCSSフレームワークです。  
+フレーム（ヘッダー、サイドナビ、コンテンツ）と、
+ボタンやフォームのパーツ類のCSSを提供しています。
 
 
 ## インストール
@@ -23,7 +24,7 @@ https://gitlab.hivelocity.co.jp/adminize/boilerplate
 
 
 ## バグ・要望
-レポジトリのIssueにて報告をお願いします。
-現状イシュールールは設けていないので、自由に投稿して問題ありません。
-極力取り入れたい気持ちはあります。
+レポジトリのIssueにて報告をお願いします。  
+現状イシュールールは設けていないので、自由に投稿して問題ありません。  
+極力取り入れたい気持ちはあります。  
 https://gitlab.hivelocity.co.jp/adminize/adminize/issues
