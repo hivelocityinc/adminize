@@ -1661,15 +1661,13 @@ select {
 .tab {
   position: relative;
   padding: 0;
-  margin: 0;
-  margin-bottom: -1px;
+  margin: 0 0 -1px;
   letter-spacing: -.4em;
   list-style: none; }
   .tab > li {
     position: relative;
     display: inline-block;
-    margin: 0;
-    margin-left: -1px;
+    margin: 0 0 0 -1px;
     letter-spacing: normal;
     background-color: #fff;
     border: 1px solid #ccc; }
