@@ -1,7 +1,7 @@
 {
   "name": "adminize",
   "description": "CSS framework for admin",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": [
     "css/adminize.css",
     "js/adminize.js"
