@@ -1226,6 +1226,8 @@ select {
   transition: 0.2s all ease; }
 
 .side-bar__header {
+  position: relative;
+  z-index: 50;
   height: 60px;
   background-color: #3a3d3c;
   border-bottom: 1px solid #2e302f; }

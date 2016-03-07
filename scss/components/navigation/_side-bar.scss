@@ -16,6 +16,8 @@
   transition: $base-transition;
 }
 .side-bar__header {
+  position: relative;
+  z-index: $sitename-zindex;
   height: $header-height;
   background-color: $head-color;
   border-bottom: 1px solid darken($head-color, 5%);
