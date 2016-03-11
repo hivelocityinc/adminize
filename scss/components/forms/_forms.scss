@@ -147,7 +147,7 @@ textarea {
     background-color: $primary-color;
   }
   + .icon::after {
-    @include fontawesome('\f00c');
+    @include fontawesome("\f00c");
     top: -1px;
     left: 2px;
     font-size: 13px;
