@@ -3,7 +3,9 @@
   "version": "0.2.3",
   "description": "CSS framework for admin",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint:scss": "scss-lint -r scss_lint_reporter_checkstyle -f Checkstyle -o result/scss_lint.xml"
+  },
   "repository": {
     "type": "git",
     "url": "git@gitlab.hivelocity.co.jp:adminize/adminize.git"
