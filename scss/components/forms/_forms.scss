@@ -17,7 +17,7 @@ label {
 [type=text],
 [type=password],
 textarea {
-  width: 100%;
+  display: block;
   padding: 8px 12px 7px;
   background: $white;
   border: 2px solid $border-light-color;
@@ -147,7 +147,7 @@ textarea {
     background-color: $primary-color;
   }
   + .icon::after {
-    @include fontawesome("\f00c");
+    @include fontawesome('\f00c');
     top: -1px;
     left: 2px;
     font-size: 13px;
