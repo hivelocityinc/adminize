@@ -41,8 +41,11 @@ gulp.task('scsslint', function () {
       '!./scss/components/foundation/_normalize.scss'
     ])
     .pipe($.scsslint({
-      'config': '.scss-lint.yml'
-    }));
+      'config': '.scss-lint.yml',
+      'reporterOutputFormat': 'Checkstyle',
+      'filePipeOutput': 'scss_report.xml'
+    }))
+    .pipe(gulp.dest('./reports'));
 });
 
 
