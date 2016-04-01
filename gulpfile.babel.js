@@ -1,24 +1,18 @@
-/* jshint node:true */
+import gulp from 'gulp'
+import runSequence from 'run-sequence'
+import gulpLoadPlugin from 'gulp-load-plugins'
 
-'use strict';
-
-// Node mobules
-var gulp = require('gulp');
-var runSequence = require('run-sequence');
-var $ = require('gulp-load-plugins')({
+const $ = gulpLoadPlugin({
   rename: {
     'gulp-scss-lint': 'scsslint'
   }
-});
-
-// Config
-var config = {
-  style:  './scss/**/*.scss',
+})
+const config = {
+  style: './scss/**/*.scss',
   script: './js/adminize.js'
-};
+}
 
-
-gulp.task('styles', function () {
+gulp.task('styles', () => {
   return gulp.src('./scss/adminize.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -32,22 +26,19 @@ gulp.task('styles', function () {
       sourceRoot: '.'
     }))
     .pipe(gulp.dest('css'))
-});
+})
 
-gulp.task('scsslint', function () {
-  return gulp.src([
-      './scss/**/*.scss'
-    ])
+gulp.task('scsslint', () => {
+  return gulp.src(['./scss/**/*.scss'])
     .pipe($.scsslint({
       'config': '.scss-lint.yml',
       'reporterOutputFormat': 'Checkstyle',
       'filePipeOutput': 'scss_report.xml'
     }))
-    .pipe(gulp.dest('./reports'));
-});
+    .pipe(gulp.dest('./reports'))
+})
 
-
-gulp.task('minify', function () {
+gulp.task('minify', () => {
   return gulp.src('./scss/adminize.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -59,34 +50,31 @@ gulp.task('minify', function () {
       sourceRoot: '.'
     }))
     .pipe(gulp.dest('css'))
-});
+})
 
-
-gulp.task('script', function () {
-  gulp.src(config.script)
+gulp.task('script', () => {
+  return gulp.src(config.script)
     .pipe($.plumber())
     .pipe(gulp.dest('js'))
     .pipe($.rename({ suffix: '.min' }))
     .pipe($.uglify())
-    .pipe(gulp.dest('js'));
-});
+    .pipe(gulp.dest('js'))
+})
 
-
-gulp.task('watch', function () {
-  gulp.watch(config.style, function () {
+gulp.task('watch', () => {
+  gulp.watch(config.style, () => {
     return runSequence(
       'scsslint',
       ['styles', 'minify']
-    );
-  });
-  gulp.watch(config.script, ['script']);
-});
+    )
+  })
+  gulp.watch(config.script, ['script'])
+})
 
-
-gulp.task('default', function () {
+gulp.task('default', () => {
   return runSequence(
     'scsslint',
     ['styles', 'minify', 'script'],
     'watch'
-  );
-});
+  )
+})
