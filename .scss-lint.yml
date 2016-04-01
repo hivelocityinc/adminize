@@ -1,5 +1,4 @@
 scss_files: "scss/**/*.scss"
-exclude: 'scss/components/foundation/_normalize.scss'
 
 linters:
   ColorVariable:

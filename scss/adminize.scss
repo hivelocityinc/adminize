@@ -3,7 +3,10 @@
 // ------------------------------------------------------------
 @import "settings";
 @import "mixins";
-@import "components/foundation/normalize";
+
+@import "../node_modules/normalize.css/normalize.css";
+
+// Components
 @import "components/foundation/base";
 @import "components/foundation/utility";
 @import "components/typography/typography";
