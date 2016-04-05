@@ -13,6 +13,9 @@ gulp.task('watch', () => {
   $.watch(config.style.src, () => {
     gulp.start(['style']);
   });
+  $.watch(config.script.src, () => {
+    gulp.start(['script']);
+  });
 });
 
 gulp.task('default', () => {

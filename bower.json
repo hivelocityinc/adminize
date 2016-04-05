@@ -16,7 +16,8 @@
     "*/.*",
     "*.json",
     "*.md",
-    "test"
+    "test",
+    "gulp"
   ],
   "keywords": [
     "adminize",

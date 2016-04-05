@@ -4,7 +4,8 @@
     "standard"
   ],
   "env": {
-    "browser": true
+    "browser": true,
+    "jquery": true
   },
   "rules": {
     semi: [2, 'always']

@@ -17,6 +17,8 @@ module.exports = {
     }
   },
   script: {
+    src: './src/js/**/*.js',
+    root: './src/js/adminize.js',
     dist: './js/adminize.js'
   }
 };
