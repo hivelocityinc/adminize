@@ -57,16 +57,23 @@ export default class Adminize {
     let _dropDown = $('.js-dropdown');
     let _hoverFlg = false;
     let _body = $('body');
-    _dropDown.on('click', (event) => {
-      let _this = $(event.currentTarget);
-      if (_this.hasClass(_class)) {
-        _this.removeClass(_class);
-      } else {
-        _this.addClass(_class);
-      }
-    });
-    _dropDown.on('mouseenter', () => { _hoverFlg = true; });
-    _dropDown.on('mouseleave', () => { _hoverFlg = false; });
+
+    _dropDown
+      .on('click', (event) => {
+        let _this = $(event.currentTarget);
+        if (_this.hasClass(_class)) {
+          _this.removeClass(_class);
+        } else {
+          _this.addClass(_class);
+        }
+      })
+      .on('mouseenter', () => {
+        _hoverFlg = true;
+      })
+      .on('mouseleave', () => {
+        _hoverFlg = false;
+      });
+
     _body.on('click', () => {
       if (_hoverFlg === false) {
         _dropDown.removeClass(_class);

@@ -54,10 +54,10 @@
 	
 	(function ($) {
 	  var adminize = new _adminize2.default();
+	
 	  $(window).on('load', function () {
 	    adminize.initialize();
-	  });
-	  $(window).on('resize', function () {
+	  }).on('resize', function () {
 	    adminize.setSidebarHeight();
 	  });
 	})(jQuery);
@@ -146,6 +146,7 @@
 	      var _dropDown = $('.js-dropdown');
 	      var _hoverFlg = false;
 	      var _body = $('body');
+	
 	      _dropDown.on('click', function (event) {
 	        var _this = $(event.currentTarget);
 	        if (_this.hasClass(_class)) {
@@ -153,13 +154,12 @@
 	        } else {
 	          _this.addClass(_class);
 	        }
-	      });
-	      _dropDown.on('mouseenter', function () {
+	      }).on('mouseenter', function () {
 	        _hoverFlg = true;
-	      });
-	      _dropDown.on('mouseleave', function () {
+	      }).on('mouseleave', function () {
 	        _hoverFlg = false;
 	      });
+	
 	      _body.on('click', function () {
 	        if (_hoverFlg === false) {
 	          _dropDown.removeClass(_class);
