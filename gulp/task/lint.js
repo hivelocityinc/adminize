@@ -9,7 +9,7 @@ let $ = gulpLoadPlugin({
 });
 let config = require('../config');
 
-gulp.task('lint:scss', () => {
+gulp.task('lint:style', () => {
   return gulp.src(config.style.src)
     .pipe($.scssLint(config.style.lint))
     .pipe(gulp.dest('./reports'));
@@ -22,4 +22,4 @@ gulp.task('lint:script', () => {
     .pipe($.eslint.failOnError());
 });
 
-gulp.task('lint', ['lint:scss', 'lint:script']);
+gulp.task('lint', ['lint:style', 'lint:script']);
