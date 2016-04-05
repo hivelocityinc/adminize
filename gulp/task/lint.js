@@ -15,4 +15,11 @@ gulp.task('lint:scss', () => {
     .pipe(gulp.dest('./reports'));
 });
 
-gulp.task('lint', ['lint:scss']);
+gulp.task('lint:script', () => {
+  return gulp.src(config.script.src)
+    .pipe($.eslint())
+    .pipe($.eslint.format())
+    .pipe($.eslint.failOnError());
+});
+
+gulp.task('lint', ['lint:scss', 'lint:script']);
