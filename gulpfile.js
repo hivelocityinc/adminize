@@ -12,7 +12,7 @@ requireDir('./gulp/task', {recurse: true});
 
 gulp.task('watch', () => {
   $.watch(config.style.src, () => {
-    gulp.start(['style', 'lint:style']);
+    gulp.start(['style', 'lint:style', 'minify:style']);
   });
   $.watch(config.script.src, () => {
     gulp.start(['script', 'lint:script']);
