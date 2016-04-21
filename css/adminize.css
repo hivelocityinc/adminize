@@ -620,6 +620,12 @@ label {
 
 [type=text],
 [type=password],
+[type=number],
+[type=email],
+[type=url],
+[type=date],
+[type=time],
+[type=search],
 textarea {
   display: block;
   padding: 8px 12px 7px;
@@ -631,37 +637,85 @@ textarea {
   -webkit-appearance: none; }
   [type=text]:focus,
   [type=password]:focus,
+  [type=number]:focus,
+  [type=email]:focus,
+  [type=url]:focus,
+  [type=date]:focus,
+  [type=time]:focus,
+  [type=search]:focus,
   textarea:focus {
     border-color: #4882b6; }
   [type=text].input--xsmall,
   [type=password].input--xsmall,
+  [type=number].input--xsmall,
+  [type=email].input--xsmall,
+  [type=url].input--xsmall,
+  [type=date].input--xsmall,
+  [type=time].input--xsmall,
+  [type=search].input--xsmall,
   textarea.input--xsmall {
     max-width: 80px; }
   [type=text].input--small,
   [type=password].input--small,
+  [type=number].input--small,
+  [type=email].input--small,
+  [type=url].input--small,
+  [type=date].input--small,
+  [type=time].input--small,
+  [type=search].input--small,
   textarea.input--small {
     max-width: 180px; }
   [type=text].input--large,
   [type=password].input--large,
+  [type=number].input--large,
+  [type=email].input--large,
+  [type=url].input--large,
+  [type=date].input--large,
+  [type=time].input--large,
+  [type=search].input--large,
   textarea.input--large {
     max-width: 300px; }
   [type=text].input--success,
   [type=password].input--success,
+  [type=number].input--success,
+  [type=email].input--success,
+  [type=url].input--success,
+  [type=date].input--success,
+  [type=time].input--success,
+  [type=search].input--success,
   textarea.input--success {
     background-color: #eaf4e6;
     border-color: #60a144; }
   [type=text].input--danger,
   [type=password].input--danger,
+  [type=number].input--danger,
+  [type=email].input--danger,
+  [type=url].input--danger,
+  [type=date].input--danger,
+  [type=time].input--danger,
+  [type=search].input--danger,
   textarea.input--danger {
     background-color: #faeeee;
     border-color: #c24640; }
   [type=text].input--warning,
   [type=password].input--warning,
+  [type=number].input--warning,
+  [type=email].input--warning,
+  [type=url].input--warning,
+  [type=date].input--warning,
+  [type=time].input--warning,
+  [type=search].input--warning,
   textarea.input--warning {
     background-color: #faf5ea;
     border-color: #cf9c30; }
   [type=text]:disabled,
   [type=password]:disabled,
+  [type=number]:disabled,
+  [type=email]:disabled,
+  [type=url]:disabled,
+  [type=date]:disabled,
+  [type=time]:disabled,
+  [type=search]:disabled,
   textarea:disabled {
     cursor: not-allowed;
     background-color: #f1f1f1;
