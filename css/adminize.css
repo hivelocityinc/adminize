@@ -1040,6 +1040,16 @@ textarea {
   [type=search].input--large,
   textarea.input--large {
     max-width: 300px; }
+  [type=text].input--full,
+  [type=password].input--full,
+  [type=number].input--full,
+  [type=email].input--full,
+  [type=url].input--full,
+  [type=date].input--full,
+  [type=time].input--full,
+  [type=search].input--full,
+  textarea.input--full {
+    width: 100%; }
   [type=text].input--success,
   [type=password].input--success,
   [type=number].input--success,
