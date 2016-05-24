@@ -43,6 +43,9 @@ textarea {
   &.input--large {
     max-width: 300px;
   }
+  &.input--full {
+    width: 100%;
+  }
   &.input--success {
     background-color: lighten($success-color, 48%);
     border-color: $success-color;
