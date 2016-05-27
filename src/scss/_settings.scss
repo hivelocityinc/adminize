@@ -1,7 +1,7 @@
 //
 // Variable settings
 // ------------------------------------------------------------
-
+@import url("//fonts.googleapis.com/css?family=Roboto:400,500,700");
 
 $black:                   #000 !default;
 $gray-darker:             #333 !default;
@@ -29,6 +29,7 @@ $base-line-height:        1.5em !default;
 $base-font-family:        "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif !default;
 $mono-font-family:        Verdana !default;
 $icon-font-family:        FontAwesome !default;
+$num-font-family:         'Roboto', sans-serif;
 $header-height:           60px !default;
 $sidebar-width:           260px !default;
 $btn-height:              40px !default;
