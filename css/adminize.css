@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("//fonts.googleapis.com/css?family=Roboto:400,500,700");
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -1978,5 +1979,57 @@ select {
     .pills a:hover {
       text-decoration: none;
       background-color: #dadada; }
+
+.summary {
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc; }
+
+.summary__head {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05); }
+  .summary__head .fa {
+    margin-right: 6px; }
+
+.summary__body {
+  padding: 15px;
+  margin: 0; }
+
+.summary__num {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  color: #333; }
+  .summary__num.diff {
+    margin-top: 10px;
+    font-size: 13px; }
+  .summary__num.success {
+    color: #60a144; }
+  .summary__num.danger {
+    color: #c24640; }
+
+.summaries {
+  height: 100%;
+  overflow: hidden; }
+  .summaries .summary {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+    .summaries .summary:nth-child(3n) {
+      margin-right: 0; }
+
+@media only screen and (max-width: 800px) {
+  .summaries .summary {
+    width: 49%; }
+    .summaries .summary:nth-child(3n) {
+      margin-right: 2%; }
+    .summaries .summary:nth-child(2n) {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=adminize.css.map */
