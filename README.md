@@ -3,10 +3,6 @@
 [![npm version](https://img.shields.io/npm/v/adminize.svg?style=flat-square)](https://www.npmjs.com/package/adminize)
 [![bower version](https://img.shields.io/bower/v/adminize.svg?style=flat-square)](https://gitlab.hivelocity.co.jp/adminize/adminize)
 
-<br/>
-<img src="https://gitlab.hivelocity.co.jp/adminize/adminize/raw/master/assets/logo.png" width="200"/>
-<br/>
-
 管理画面に特化したCSSフレームワークです。  
 フレーム（ヘッダー、サイドナビ、コンテンツ）と、
 ボタンやフォームのパーツ類のCSSを提供しています。
