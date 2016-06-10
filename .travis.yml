@@ -1,7 +1,7 @@
 language: node_js
 node_js: 4
 before_install:
-  - rvm install 2.3
+  - rvm install 2.2.2
 install:
   - npm install
   - gem install scss_lint
