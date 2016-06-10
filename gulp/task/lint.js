@@ -11,8 +11,7 @@ let config = require('../config');
 
 gulp.task('lint:style', () => {
   return gulp.src(config.style.src)
-    .pipe($.scssLint(config.style.lint))
-    .pipe(gulp.dest('./reports'));
+    .pipe($.scssLint(config.style.lint));
 });
 
 gulp.task('lint:script', () => {

@@ -4,7 +4,7 @@
   "description": "CSS framework for admin",
   "main": "index.js",
   "scripts": {
-    "lint:scss": "gulp scsslint",
+    "lint": "gulp lint",
     "develop": "gulp develop"
   },
   "repository": {
