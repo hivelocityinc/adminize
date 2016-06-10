@@ -11,9 +11,7 @@ module.exports = {
       sourceRoot: '.'
     },
     lint: {
-      'config': '.scss-lint.yml',
-      'reporterOutputFormat': 'Checkstyle',
-      'filePipeOutput': 'scss_report.xml'
+      'config': '.scss-lint.yml'
     }
   },
   script: {
