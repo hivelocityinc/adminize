@@ -29,10 +29,10 @@
   "authors": [
     "Ryuichi Komeda <komeda@hivelocity.co.jp>"
   ],
-  "homepage": "https://gitlab.hivelocity.co.jp/adminize/adminize",
+  "homepage": "https://github.com/hivelocityinc/adminize",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.hivelocity.co.jp:adminize/adminize.git"
+    "url": "git@github.com:hivelocityinc/adminize.git"
   },
   "dependencies": {
     "jquery":       ">=2.2.1",

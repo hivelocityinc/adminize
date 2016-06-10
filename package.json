@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.hivelocity.co.jp:adminize/adminize.git"
+    "url": "git@github.com:hivelocityinc/adminize.git"
   },
   "keywords": [
     "adminize",
@@ -18,13 +18,13 @@
     "admin",
     "template"
   ],
-  "homepage": "https://gitlab.hivelocity.co.jp/adminize/adminize",
+  "homepage": "https://github.com/hivelocityinc/adminize",
   "authors": [
     "Ryuichi Komeda <komeda@hivelocity.co.jp>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.hivelocity.co.jp/adminize/adminize/issues"
+    "url": "https://github.com/hivelocityinc/adminize/issues"
   },
   "devDependencies": {
     "babel": "^6.5.2",
