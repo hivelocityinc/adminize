@@ -14,7 +14,7 @@
   border-radius: $base-radius;
   outline: 0;
   transition: $base-transition;
-  .fa {
+  &.with-icon .fa {
     margin-right: 8px;
   }
   &.disabled,
