@@ -1,3 +1,9 @@
+## v0.4.3
+- Fix a tables border style (#4)
+
+## v0.4.2
+- Move repository to Github.com
+
 ## v0.4.0, v0.4.1
 - Add Summary Component
 
