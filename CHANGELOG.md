@@ -1,5 +1,9 @@
+## v0.4.4
+- Fixed a buttons cursor style (1647767)
+- Create a helper class for button with fa-icons (316712c)
+
 ## v0.4.3
-- Fix a tables border style (#4)
+- Fixed a tables border style (#4)
 
 ## v0.4.2
 - Move repository to Github.com
@@ -11,10 +15,10 @@
 - Add input size class
 
 ## v0.3.3
-- Fix normalize import path
+- Fixed normalize import path
 
 ## v0.3.2
-- Fix other input style
+- Fixed other input style
 
 ## v0.3.1
 - Refactoring to gulp files
