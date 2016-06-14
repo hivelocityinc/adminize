@@ -1,3 +1,6 @@
+## v0.5.0
+- Add the label component #7
+
 ## v0.4.4
 - Fixed a buttons cursor style (1647767)
 - Create a helper class for button with fa-icons (316712c)
