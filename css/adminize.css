@@ -1017,6 +1017,7 @@ label {
 [type=search],
 textarea {
   display: block;
+  width: 200px;
   padding: 8px 12px 7px;
   background: #fff;
   border: 2px solid #e0e0e0;
@@ -1043,7 +1044,7 @@ textarea {
   [type=time].input--xsmall,
   [type=search].input--xsmall,
   textarea.input--xsmall {
-    max-width: 80px; }
+    width: 80px; }
   [type=text].input--small,
   [type=password].input--small,
   [type=number].input--small,
@@ -1053,7 +1054,7 @@ textarea {
   [type=time].input--small,
   [type=search].input--small,
   textarea.input--small {
-    max-width: 180px; }
+    width: 160px; }
   [type=text].input--large,
   [type=password].input--large,
   [type=number].input--large,
@@ -1063,7 +1064,7 @@ textarea {
   [type=time].input--large,
   [type=search].input--large,
   textarea.input--large {
-    max-width: 300px; }
+    width: 300px; }
   [type=text].input--full,
   [type=password].input--full,
   [type=number].input--full,
@@ -1256,6 +1257,36 @@ select {
     text-align: center;
     pointer-events: none;
     border-left: 1px solid #fff; }
+
+@media only screen and (max-width: 800px) {
+  [type=text],
+  [type=password],
+  [type=number],
+  [type=email],
+  [type=url],
+  [type=date],
+  [type=time],
+  [type=search],
+  textarea {
+    width: 100%; }
+    [type=text].input--small, [type=text].input--large,
+    [type=password].input--small,
+    [type=password].input--large,
+    [type=number].input--small,
+    [type=number].input--large,
+    [type=email].input--small,
+    [type=email].input--large,
+    [type=url].input--small,
+    [type=url].input--large,
+    [type=date].input--small,
+    [type=date].input--large,
+    [type=time].input--small,
+    [type=time].input--large,
+    [type=search].input--small,
+    [type=search].input--large,
+    textarea.input--small,
+    textarea.input--large {
+      width: 100%; } }
 
 .btn {
   display: inline-block;

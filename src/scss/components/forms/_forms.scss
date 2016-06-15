@@ -24,6 +24,7 @@ label {
 [type=search],
 textarea {
   display: block;
+  width: 200px;
   padding: 8px 12px 7px;
   background: $white;
   border: 2px solid $border-light-color;
@@ -35,13 +36,13 @@ textarea {
     border-color: $primary-color;
   }
   &.input--xsmall {
-    max-width: 80px;
+    width: 80px;
   }
   &.input--small {
-    max-width: 180px;
+    width: 160px;
   }
   &.input--large {
-    max-width: 300px;
+    width: 300px;
   }
   &.input--full {
     width: 100%;
@@ -227,5 +228,23 @@ select {
     text-align: center;
     pointer-events: none;
     border-left: 1px solid $white;
+  }
+}
+
+@include mobile {
+  [type=text],
+  [type=password],
+  [type=number],
+  [type=email],
+  [type=url],
+  [type=date],
+  [type=time],
+  [type=search],
+  textarea {
+    width: 100%;
+    &.input--small,
+    &.input--large {
+      width: 100%;
+    }
   }
 }

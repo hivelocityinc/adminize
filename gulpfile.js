@@ -20,7 +20,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('serve', (cb) => {
-  exec('./node_modules/.bin/harp server --port 8888', (err, stdout, stderr) => {
+  exec('./node_modules/.bin/harp server --port 5000', (err, stdout, stderr) => {
     console.log(stdout);
     console.log(stderr);
     cb(err);
