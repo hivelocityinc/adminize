@@ -1,3 +1,6 @@
+## v0.5.1
+- Fixed input sizing #8
+
 ## v0.5.0
 - Add the label component #7
 
