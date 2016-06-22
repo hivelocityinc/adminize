@@ -464,6 +464,9 @@ textarea {
 .color--warning {
   color: #cf9c30 !important; }
 
+.color--info {
+  color: #38a2d4 !important; }
+
 .color--muted {
   color: #888 !important; }
 
@@ -475,6 +478,9 @@ textarea {
 
 .bg--warning {
   background-color: #faf5ea !important; }
+
+.bg--info {
+  background-color: #f5fafd !important; }
 
 .mgn0 {
   margin: 0px !important; }
@@ -1108,6 +1114,17 @@ textarea {
   textarea.input--warning {
     background-color: #faf5ea;
     border-color: #cf9c30; }
+  [type=text].input--info,
+  [type=password].input--info,
+  [type=number].input--info,
+  [type=email].input--info,
+  [type=url].input--info,
+  [type=date].input--info,
+  [type=time].input--info,
+  [type=search].input--info,
+  textarea.input--info {
+    background-color: #f5fafd;
+    border-color: #38a2d4; }
   [type=text]:disabled,
   [type=password]:disabled,
   [type=number]:disabled,
@@ -1318,13 +1335,15 @@ select {
 .btn--primary,
 .btn--success,
 .btn--danger,
-.btn--warning {
+.btn--warning,
+.btn--info {
   color: #fff; }
   .btn--dark:hover,
   .btn--primary:hover,
   .btn--success:hover,
   .btn--danger:hover,
-  .btn--warning:hover {
+  .btn--warning:hover,
+  .btn--info:hover {
     text-decoration: none; }
 
 .btn--dark {
@@ -1351,6 +1370,11 @@ select {
   background-color: #cf9c30; }
   .btn--warning:hover {
     background-color: #ae8328; }
+
+.btn--info {
+  background-color: #38a2d4; }
+  .btn--info:hover {
+    background-color: #288cbb; }
 
 .btn--small {
   padding: 8px 12px 7px;
@@ -1403,6 +1427,10 @@ select {
     color: #a67d26;
     background-color: #faf5ea;
     border-color: #ecd7ac; }
+  .flash-msg.info {
+    color: #2786b2;
+    background-color: #f5fafd;
+    border-color: #b6ddef; }
 
 .head-bar {
   position: fixed;

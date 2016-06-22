@@ -43,6 +43,7 @@
 .color--success {  color: $success-color !important; }
 .color--danger {   color: $danger-color !important; }
 .color--warning {  color: $warning-color !important; }
+.color--info {     color: $info-color !important; }
 .color--muted {    color: $gray !important; }
 
 
@@ -51,6 +52,7 @@
 .bg--success { background-color: lighten($success-color, 45%) !important; }
 .bg--danger { background-color: lighten($danger-color, 45%) !important; }
 .bg--warning { background-color: lighten($warning-color, 45%) !important; }
+.bg--info { background-color: lighten($info-color, 45%) !important; }
 
 
 // Margin

@@ -36,7 +36,8 @@
 .btn--primary,
 .btn--success,
 .btn--danger,
-.btn--warning {
+.btn--warning,
+.btn--info {
   color: $white;
   &:hover {
     text-decoration: none;
@@ -70,6 +71,12 @@
   background-color: $warning-color;
   &:hover {
     background-color: darken($warning-color, 8%);
+  }
+}
+.btn--info {
+  background-color: $info-color;
+  &:hover {
+    background-color: darken($info-color, 8%);
   }
 }
 .btn--small {

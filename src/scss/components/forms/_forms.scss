@@ -59,6 +59,10 @@ textarea {
     background-color: lighten($warning-color, 45%);
     border-color: $warning-color;
   }
+  &.input--info {
+    background-color: lighten($info-color, 45%);
+    border-color: $info-color;
+  }
   &:disabled {
     cursor: not-allowed;
     background-color: $gray-white;
