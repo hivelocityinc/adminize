@@ -14,14 +14,7 @@ label {
 
 // Text
 // ------------------------------
-[type=text],
-[type=password],
-[type=number],
-[type=email],
-[type=url],
-[type=date],
-[type=time],
-[type=search],
+input,
 textarea {
   display: block;
   width: 200px;
@@ -32,6 +25,10 @@ textarea {
   outline: 0;
   transition: $base-transition;
   -webkit-appearance: none;
+  @include placeholder {
+    color: $gray;
+    opacity: 1;
+  }
   &:focus {
     border-color: $primary-color;
   }
@@ -48,16 +45,36 @@ textarea {
     width: 100%;
   }
   &.input--success {
+    color: $success-color;
     background-color: lighten($success-color, 48%);
     border-color: $success-color;
+    @include placeholder {
+      color: $success-color;
+    }
   }
   &.input--danger {
+    color: $danger-color;
     background-color: lighten($danger-color, 45%);
     border-color: $danger-color;
+    @include placeholder {
+      color: $danger-color;
+    }
   }
   &.input--warning {
+    color: $warning-color;
     background-color: lighten($warning-color, 45%);
     border-color: $warning-color;
+    @include placeholder {
+      color: $warning-color;
+    }
+  }
+  &.input--info {
+    color: $info-color;
+    background-color: lighten($info-color, 45%);
+    border-color: $info-color;
+    @include placeholder {
+      color: $info-color;
+    }
   }
   &:disabled {
     cursor: not-allowed;
@@ -68,6 +85,7 @@ textarea {
 [type=password] {
   font-family: $mono-font-family;
 }
+
 
 textarea {
   vertical-align: top;

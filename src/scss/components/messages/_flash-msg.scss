@@ -46,4 +46,9 @@
     background-color: lighten($warning-color, 45%);
     border-color: lighten($warning-color, 30%);
   }
+  &.info {
+    color: darken($info-color, 10%);
+    background-color: lighten($info-color, 45%);
+    border-color: lighten($info-color, 30%);
+  }
 }
