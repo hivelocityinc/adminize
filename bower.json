@@ -1,6 +1,6 @@
 {
   "name": "adminize",
-  "description": "CSS framework for admin",
+  "description": "HTML/CSS framework for admin",
   "version": "0.5.1",
   "main": [
     "css/adminize.css",
@@ -14,10 +14,13 @@
     "gulpfile.js",
     "src",
     "*/.*",
+    ".*",
     "*.json",
     "*.md",
     "test",
-    "gulp"
+    "gulp",
+    "Gemfile",
+    "Gemfile.lock"
   ],
   "keywords": [
     "adminize",
