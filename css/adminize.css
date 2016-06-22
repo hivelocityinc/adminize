@@ -383,6 +383,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
+  font-family: Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.5em;
   color: #333;
@@ -1018,6 +1019,7 @@ textarea {
   display: block;
   width: 200px;
   padding: 8px 12px 7px;
+  font-family: Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;
   background: #fff;
   border: 2px solid #e0e0e0;
   border-radius: 3px;
@@ -1214,7 +1216,7 @@ textarea {
     top: 0; } }
 
 select {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+  font-family: Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;
   cursor: pointer; }
   select:disabled {
     cursor: not-allowed; }
