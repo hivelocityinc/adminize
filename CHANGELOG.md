@@ -1,3 +1,7 @@
+## v0.5.2
+- Removed to scss_lint_reporter_checkstyle from Gemfile (6c4dab5, 3fd7891)
+- Updated a bower's ignore list (31e2dea)
+
 ## v0.5.1
 - Fixed input sizing #8
 
