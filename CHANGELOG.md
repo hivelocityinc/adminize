@@ -1,3 +1,9 @@
+## v0.6.0
+- Added property of font-family to body #14
+- Added info status to some components #13
+- Fixed input style to `input[type="tel"]` #13
+- Fixed placeholder style #13
+
 ## v0.5.2
 - Removed to scss_lint_reporter_checkstyle from Gemfile (6c4dab5, 3fd7891)
 - Updated a bower's ignore list (31e2dea)
