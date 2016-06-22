@@ -1,7 +1,7 @@
 {
   "name": "adminize",
-  "version": "0.5.1",
-  "description": "CSS framework for admin",
+  "version": "0.5.2",
+  "description": "HTML/CSS framework for admin",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
