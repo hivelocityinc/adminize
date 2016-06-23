@@ -1008,6 +1008,9 @@ li {
 .label--warning {
   background-color: #cf9c30; }
 
+.label--info {
+  background-color: #38a2d4; }
+
 label {
   position: relative;
   cursor: pointer; }
