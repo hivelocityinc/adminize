@@ -1,3 +1,6 @@
+## v0.6.1
+- Added info status to Label component
+
 ## v0.6.0
 - Added property of font-family to body #14
 - Added info status to some components #13
