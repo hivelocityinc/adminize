@@ -1,6 +1,6 @@
 {
   "name": "adminize",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "HTML/CSS framework for admin",
   "main": "index.js",
   "scripts": {
