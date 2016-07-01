@@ -6,12 +6,12 @@
 // Media Query
 // --------------------
 @mixin tablet {
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: $break-point-laptop) {
     @content;
   }
 }
 @mixin mobile {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: $break-point-table) {
     @content;
   }
 }

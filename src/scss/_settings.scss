@@ -3,6 +3,7 @@
 // ------------------------------------------------------------
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 
+// Colors
 $black:                   #000 !default;
 $gray-darker:             #333 !default;
 $gray-dark:               #666 !default;
@@ -17,33 +18,45 @@ $success-color:           #60a144 !default;
 $danger-color:            #c24640 !default;
 $warning-color:           #cf9c30 !default;
 $info-color:              #38a2d4 !default;
-
 $head-color:              #3a3d3c !default;
 $sidebar-color:           #4d5250 !default;
 $border-color:            #ccc !default;
 $border-light-color:      lighten($border-color, 8%) !default;
-$text-color:              $gray-darker;
+$text-color:              $gray-darker !default;
 $bg-color:                #eee !default;
 
+
+// Typography
 $base-font-size:          14px !default;
 $base-line-height:        1.5em !default;
 $base-font-family:        Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif !default;
 $mono-font-family:        Verdana !default;
 $icon-font-family:        FontAwesome !default;
-$num-font-family:         'Roboto', sans-serif;
+$num-font-family:         'Roboto', sans-serif !default;
 $header-height:           60px !default;
 $sidebar-width:           260px !default;
 $btn-height:              40px !default;
 $input-style-size:        24px !default;
 $header-logo-size:        32px !default;
 
+
+// Z-Index
 $head-zindex:             20 !default;
 $content-zindex:          30 !default;
 $sidebar-zindex:          40 !default;
 $sitename-zindex:         50 !default;
 
+
+// Others
 $base-radius:             3px !default;
 $base-transition:         .2s all ease !default;
 
-$margin-list:             0, 2, 3, 5, 10, 15, 20, 25, 30, 40, 50, 60;
-$weight-list:             100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+// Break Point
+$break-point-laptop:      1000px !default;
+$break-point-table:       800px !default;
+
+
+// List
+$margin-list:             0, 2, 3, 5, 10, 15, 20, 25, 30, 40, 50, 60 !default;
+$weight-list:             100, 200, 300, 400, 500, 600, 700, 800, 900 !default;
