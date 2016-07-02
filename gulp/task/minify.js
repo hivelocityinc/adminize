@@ -14,15 +14,8 @@ gulp.task('minify:style', () => {
     .pipe($.cssnano())
     .pipe($.rename({ suffix: '.min' }))
     .pipe($.sourcemaps.write('.', config.style.map))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css'))
+    .pipe($.copy('test'));
 });
 
-gulp.task('minify:script', () => {
-  return gulp.src(config.script.dist)
-    .pipe($.plumber())
-    .pipe($.rename({ suffix: '.min' }))
-    .pipe($.uglify())
-    .pipe(gulp.dest('js'));
-});
-
-gulp.task('minify', ['minify:style', 'minify:script']);
+gulp.task('minify', ['minify:style']);

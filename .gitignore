@@ -4,6 +4,9 @@
 /node_modules/
 /vendor/
 /reports/
+/test/css/
+/test/js/
+/test/vendor/
 
 # Created by https://www.gitignore.io/api/ruby
 
