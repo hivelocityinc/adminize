@@ -202,9 +202,7 @@ select {
 
 .select-styled {
   position: relative;
-  &.select--large {
-    width: 300px;
-  }
+  display: inline-block;
   select {
     display: inline;
     width: 100%;

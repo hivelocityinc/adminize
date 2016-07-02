@@ -1225,9 +1225,8 @@ select {
     cursor: not-allowed; }
 
 .select-styled {
-  position: relative; }
-  .select-styled.select--large {
-    width: 300px; }
+  position: relative;
+  display: inline-block; }
   .select-styled select {
     display: inline;
     width: 100%;
