@@ -12,5 +12,6 @@ gulp.task('style', () => {
     .pipe($.sass())
     .pipe($.autoprefixer(config.style.prefix))
     .pipe($.sourcemaps.write('.', config.style.map))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css'))
+    .pipe($.copy('test'));
 });
