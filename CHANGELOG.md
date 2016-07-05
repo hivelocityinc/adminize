@@ -1,3 +1,6 @@
+## v0.6.3
+- Change a display of the styled select ([#23](https://github.com/hivelocityinc/adminize/pull/23))
+
 ## v0.6.2
 - Added variables for media queries ([#20](https://github.com/hivelocityinc/adminize/pull/20))
 
