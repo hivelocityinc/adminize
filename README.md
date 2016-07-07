@@ -1,5 +1,7 @@
 # Adminize
 
+[![Join the chat at https://gitter.im/hivelocityinc/adminize](https://badges.gitter.im/hivelocityinc/adminize.svg)](https://gitter.im/hivelocityinc/adminize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![npm](https://img.shields.io/npm/v/adminize.svg?style=flat-square)](https://www.npmjs.com/package/adminize)
 [![Travis](https://img.shields.io/travis/hivelocityinc/adminize.svg?style=flat-square)](https://travis-ci.org/hivelocityinc/adminize)
 [![Code Climate](https://img.shields.io/codeclimate/github/hivelocityinc/adminize.svg?style=flat-square)](https://codeclimate.com/github/hivelocityinc/adminize)
