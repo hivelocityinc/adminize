@@ -1186,6 +1186,12 @@ textarea {
   .input-styled:disabled:focus + .icon {
     border-color: #e0e0e0; }
 
+[type="file"] {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  border: 0; }
+
 .input--radio + .icon {
   border-radius: 50%; }
 
@@ -1271,31 +1277,10 @@ select {
     border-left: 1px solid #fff; }
 
 @media only screen and (max-width: 800px) {
-  [type=text],
-  [type=password],
-  [type=number],
-  [type=email],
-  [type=url],
-  [type=date],
-  [type=time],
-  [type=search],
+  input,
   textarea {
     width: 100%; }
-    [type=text].input--small, [type=text].input--large,
-    [type=password].input--small,
-    [type=password].input--large,
-    [type=number].input--small,
-    [type=number].input--large,
-    [type=email].input--small,
-    [type=email].input--large,
-    [type=url].input--small,
-    [type=url].input--large,
-    [type=date].input--small,
-    [type=date].input--large,
-    [type=time].input--small,
-    [type=time].input--large,
-    [type=search].input--small,
-    [type=search].input--large,
+    input.input--small, input.input--large,
     textarea.input--small,
     textarea.input--large {
       width: 100%; } }
