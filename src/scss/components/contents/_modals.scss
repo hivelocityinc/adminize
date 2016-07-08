@@ -1,0 +1,161 @@
+@import "../../../../node_modules/remodal/dist/remodal";
+
+.remodal-bg {
+  &.remodal-is-opening,
+  &.remodal-is-opened {
+    filter: blur(3px);
+  }
+}
+
+.remodal-overlay {
+  background: rgba(0, 0, 0, .85);
+}
+
+.remodal-overlay {
+  &.remodal-is-opening,
+  &.remodal-is-closing {
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+  }
+  &.remodal-is-opening {
+    animation-name: remodal-overlay-opening-keyframes;
+  }
+  &.remodal-is-closing {
+    animation-name: remodal-overlay-closing-keyframes;
+  }
+}
+
+.remodal-wrapper {
+  padding: 15px 15px 0;
+}
+
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  background: $white;
+  border-radius: 3px;
+  transform: translate3d(0, 0, 0);
+
+  &.remodal-is-opening,
+  &.remodal-is-closing {
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+  }
+  &.remodal-is-opening {
+    animation-name: remodal-opening-keyframes;
+  }
+  &.remodal-is-closing {
+    animation-name: remodal-closing-keyframes;
+  }
+}
+.remodal,
+.remodal-wrapper::after {
+  vertical-align: middle;
+}
+
+$modal-head-height: 60px;
+.remodal__head {
+  position: relative;
+  height: $modal-head-height;
+  padding: 0 20px;
+  color: $black;
+  text-align: left;
+  border-bottom: 1px solid $border-light-color;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
+}
+.remodal__title {
+  width: 100%;
+  padding-right: $modal-head-height;
+  margin: 0;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: $modal-head-height - 2;
+  color: $black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.remodal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $modal-head-height;
+  height: $modal-head-height - 1;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-left: 1px solid $border-light-color;
+  border-top-right-radius: 3px;
+  transition: $base-transition;
+  &::after {
+    @include fontawesome("\f05c");
+    font-size: 23px;
+    line-height: $modal-head-height;
+    color: $gray;
+    transition: $base-transition;
+  }
+  &:hover {
+    background-color: $white-gray;
+    &::after {
+      color: $gray-dark;
+    }
+  }
+}
+.remodal__body {
+  padding: 20px;
+  text-align: left;
+}
+.remodal__foot {
+  padding: 20px;
+  background-color: $white-gray;
+  border-top: 1px solid $border-light-color;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .05) inset;
+}
+
+
+@keyframes remodal-opening-keyframes {
+  from {
+    opacity: 0;
+    transform: scale(.05);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(.95);
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 600px;
+  }
+}
