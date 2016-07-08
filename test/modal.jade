@@ -1,0 +1,14 @@
+a(href="#" data-remodal-target="sampleModal" class="btn btn--primary with-icon")
+  i.fa.fa-clone
+  | Call the modal
+
+div(class="remodal" data-remodal-id="sampleModal" data-remodal-options="hashTracking: false")
+  div.remodal__head
+    h2.remodal__title Heading of modal
+    button(data-remodal-action="close" class="remodal__close")
+  div.remodal__body
+    p Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+  div.remodal__foot
+    ul.list-btn.align--right
+      li: button(data-remodal-action="cancel" class="btn btn--default") Cancel
+      li: button(data-remodal-action="confirm" class="btn btn--success") OK
