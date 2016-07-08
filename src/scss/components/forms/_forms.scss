@@ -152,6 +152,13 @@ textarea {
     }
   }
 }
+[type="file"] {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  border: 0;
+}
+
 .input--radio {
   + .icon {
     border-radius: 50%;
@@ -249,14 +256,7 @@ select {
 }
 
 @include mobile {
-  [type=text],
-  [type=password],
-  [type=number],
-  [type=email],
-  [type=url],
-  [type=date],
-  [type=time],
-  [type=search],
+  input,
   textarea {
     width: 100%;
     &.input--small,
