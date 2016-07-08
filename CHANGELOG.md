@@ -1,3 +1,6 @@
+## v0.6.4
+- Fixed input[type="file"] style ([#32](https://github.com/hivelocityinc/adminize/pull/32))
+
 ## v0.6.3
 - Change a display of the styled select ([#23](https://github.com/hivelocityinc/adminize/pull/23))
 
