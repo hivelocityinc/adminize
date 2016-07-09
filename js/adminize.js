@@ -200,6 +200,7 @@
 	      var _openClass = 'is-open';
 	      var _hoverFlg = false;
 	      var _body = $('body');
+	
 	      _toggle.on('click', function (event) {
 	        var _this = $(event.currentTarget);
 	        var _parent = _this.parent('.dropdown-group');
