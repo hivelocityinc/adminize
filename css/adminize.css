@@ -2061,6 +2061,7 @@ select {
   min-width: 160px;
   padding: 6px 0;
   margin: 4px 0;
+  text-align: left;
   list-style: none;
   background-color: #fff;
   border: 1px solid #ccc;
