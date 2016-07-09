@@ -2049,6 +2049,49 @@ select {
       text-decoration: none;
       background-color: #dadada; }
 
+.dropdown-group {
+  position: relative; }
+  .dropdown-group.is-open .dropdown {
+    display: block; }
+
+.dropdown {
+  position: absolute;
+  z-index: 60;
+  display: none;
+  min-width: 160px;
+  padding: 6px 0;
+  margin: 4px 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+  .dropdown.pos-top {
+    top: auto;
+    bottom: 100%; }
+  .dropdown.pos-down {
+    top: 100%;
+    bottom: auto; }
+  .dropdown.pos-left {
+    right: auto;
+    left: 0; }
+  .dropdown.pos-right {
+    right: 0;
+    left: auto; }
+  .dropdown li {
+    display: block;
+    margin: 0; }
+  .dropdown a {
+    display: block;
+    padding: 6px 15px;
+    color: #000; }
+    .dropdown a:hover {
+      text-decoration: none;
+      background-color: #f9f9f9; }
+
+.dropdown__caret {
+  margin-left: 6px; }
+
 .summary {
   margin: 0;
   background-color: #fff;
