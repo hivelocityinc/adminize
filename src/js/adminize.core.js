@@ -7,6 +7,7 @@ export default class Adminize {
     this.userMenu();
     this.tab();
     this.flashMsgClose();
+    this.dropdown();
   };
 
   setSidebarHeight () {
@@ -102,6 +103,35 @@ export default class Adminize {
       let _this = $(event.currentTarget);
       let _parent = _this.parents('.flash-msg');
       _parent.fadeOut();
+    });
+  };
+
+  dropdown () {
+    let _toggle = $('.js-dropdown-toggle');
+    let _openClass = 'is-open';
+    let _hoverFlg = false;
+    let _body = $('body');
+    _toggle
+      .on('click', (event) => {
+        let _this = $(event.currentTarget);
+        let _parent = _this.parent('.dropdown-group');
+        if (_parent.hasClass(_openClass)) {
+          _parent.removeClass(_openClass);
+        } else {
+          $('.dropdown-group').removeClass(_openClass);
+          _parent.addClass(_openClass);
+        }
+      })
+      .on('mouseenter', () => {
+        _hoverFlg = true;
+      })
+      .on('mouseleave', () => {
+        _hoverFlg = false;
+      });
+    _body.on('click', () => {
+      if (_hoverFlg === false) {
+        $('.dropdown-group').removeClass(_openClass);
+      }
     });
   };
 };

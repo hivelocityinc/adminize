@@ -91,6 +91,7 @@
 	      this.userMenu();
 	      this.tab();
 	      this.flashMsgClose();
+	      this.dropdown();
 	    }
 	  }, {
 	    key: 'setSidebarHeight',
@@ -190,6 +191,33 @@
 	        var _this = $(event.currentTarget);
 	        var _parent = _this.parents('.flash-msg');
 	        _parent.fadeOut();
+	      });
+	    }
+	  }, {
+	    key: 'dropdown',
+	    value: function dropdown() {
+	      var _toggle = $('.js-dropdown-toggle');
+	      var _openClass = 'is-open';
+	      var _hoverFlg = false;
+	      var _body = $('body');
+	      _toggle.on('click', function (event) {
+	        var _this = $(event.currentTarget);
+	        var _parent = _this.parent('.dropdown-group');
+	        if (_parent.hasClass(_openClass)) {
+	          _parent.removeClass(_openClass);
+	        } else {
+	          $('.dropdown-group').removeClass(_openClass);
+	          _parent.addClass(_openClass);
+	        }
+	      }).on('mouseenter', function () {
+	        _hoverFlg = true;
+	      }).on('mouseleave', function () {
+	        _hoverFlg = false;
+	      });
+	      _body.on('click', function () {
+	        if (_hoverFlg === false) {
+	          $('.dropdown-group').removeClass(_openClass);
+	        }
 	      });
 	    }
 	  }]);
