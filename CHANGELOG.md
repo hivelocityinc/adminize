@@ -1,3 +1,8 @@
+## v0.7.0
+- Added the Modal component ([#29](https://github.com/hivelocityinc/adminize/pull/29))
+- Added the Dropdown component ([#33](https://github.com/hivelocityinc/adminize/pull/33))
+- Upgrade to NPM/Bower packages ([#34](https://github.com/hivelocityinc/adminize/pull/34))
+
 ## v0.6.4
 - Fixed input[type="file"] style ([#32](https://github.com/hivelocityinc/adminize/pull/32))
 
