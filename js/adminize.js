@@ -197,6 +197,7 @@
 	    key: 'dropdown',
 	    value: function dropdown() {
 	      var _toggle = $('.js-dropdown-toggle');
+	      var _allParent = $('.dropdown-group');
 	      var _openClass = 'is-open';
 	      var _hoverFlg = false;
 	      var _body = $('body');
@@ -206,7 +207,7 @@
 	        if (_parent.hasClass(_openClass)) {
 	          _parent.removeClass(_openClass);
 	        } else {
-	          $('.dropdown-group').removeClass(_openClass);
+	          _allParent.removeClass(_openClass);
 	          _parent.addClass(_openClass);
 	        }
 	      }).on('mouseenter', function () {
@@ -216,7 +217,7 @@
 	      });
 	      _body.on('click', function () {
 	        if (_hoverFlg === false) {
-	          $('.dropdown-group').removeClass(_openClass);
+	          _allParent.removeClass(_openClass);
 	        }
 	      });
 	    }

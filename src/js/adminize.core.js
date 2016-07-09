@@ -108,6 +108,7 @@ export default class Adminize {
 
   dropdown () {
     let _toggle = $('.js-dropdown-toggle');
+    let _allParent = $('.dropdown-group');
     let _openClass = 'is-open';
     let _hoverFlg = false;
     let _body = $('body');
@@ -118,7 +119,7 @@ export default class Adminize {
         if (_parent.hasClass(_openClass)) {
           _parent.removeClass(_openClass);
         } else {
-          $('.dropdown-group').removeClass(_openClass);
+          _allParent.removeClass(_openClass);
           _parent.addClass(_openClass);
         }
       })
@@ -130,7 +131,7 @@ export default class Adminize {
       });
     _body.on('click', () => {
       if (_hoverFlg === false) {
-        $('.dropdown-group').removeClass(_openClass);
+        _allParent.removeClass(_openClass);
       }
     });
   };
