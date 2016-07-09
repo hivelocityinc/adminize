@@ -54,7 +54,6 @@
 	
 	(function ($) {
 	  var adminize = new _adminize2.default();
-	
 	  $(window).on('load', function () {
 	    adminize.initialize();
 	  }).on('resize', function () {
