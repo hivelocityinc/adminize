@@ -1,3 +1,6 @@
+## v0.7.1
+- Fixed a alignment of dropdown menu ([#35](https://github.com/hivelocityinc/adminize/pull/35))
+
 ## v0.7.0
 - Added the Modal component ([#29](https://github.com/hivelocityinc/adminize/pull/29))
 - Added the Dropdown component ([#33](https://github.com/hivelocityinc/adminize/pull/33))
