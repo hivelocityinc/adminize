@@ -19,7 +19,7 @@ gulp.task('watch', () => {
   });
 });
 
-gulp.task('serve', (cb) => {
+gulp.task('harp', (cb) => {
   exec('./node_modules/.bin/harp server test --port 3000', (err, stdout, stderr) => {
     console.log(stdout);
     console.log(stderr);
@@ -27,13 +27,14 @@ gulp.task('serve', (cb) => {
   });
 });
 
-gulp.task('develop', ['watch', 'serve']);
-
-gulp.task('default', () => {
+gulp.task('serve', () => {
   return runSequence(
     'lint',
     'style',
     'minify',
-    'watch'
+    'watch',
+    'harp'
   );
 });
+
+gulp.task('default', ['serve']);
