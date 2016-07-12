@@ -11,7 +11,7 @@
   }
 }
 @mixin mobile {
-  @media only screen and (max-width: $break-point-table) {
+  @media only screen and (max-width: $break-point-tablet) {
     @content;
   }
 }
