@@ -1,3 +1,7 @@
+## v0.7.2
+- Fixed name for breakpoint variable ([#37](https://github.com/hivelocityinc/adminize/pull/37))
+- Added San Francisco to general font-family ([#38](https://github.com/hivelocityinc/adminize/pull/38))
+
 ## v0.7.1
 - Fixed a alignment of dropdown menu ([#35](https://github.com/hivelocityinc/adminize/pull/35))
 
