@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2145,63 +2145,46 @@ select {
     .summaries .summary:nth-child(2n) {
       margin-right: 0; } }
 
-/*
- *  Remodal - v1.1.0
- *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
- *  http://vodkabears.github.io/remodal/
- *
- *  Made by Ilya Makarov
- *  Under MIT License
- */
-/* ==========================================================================
-   Remodal's necessary styles
-   ========================================================================== */
-/* Hide scroll bar */
-html.remodal-is-locked {
+.remodal-is-locked {
   overflow: hidden;
   -ms-touch-action: none;
   touch-action: none; }
 
-/* Anti FOUC */
 .remodal,
 [data-remodal-id] {
   display: none; }
 
-/* Necessary styles of the overlay */
 .remodal-overlay {
   position: fixed;
-  z-index: 9999;
   top: -5000px;
   right: -5000px;
   bottom: -5000px;
   left: -5000px;
+  z-index: 9999;
   display: none; }
 
-/* Necessary styles of the wrapper */
 .remodal-wrapper {
   position: fixed;
-  z-index: 10000;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 10000;
   display: none;
   overflow: auto;
   text-align: center;
   -webkit-overflow-scrolling: touch; }
 
-.remodal-wrapper:after {
+.remodal-wrapper::after {
   display: inline-block;
   height: 100%;
-  margin-left: -0.05em;
+  margin-left: -.05em;
   content: ""; }
 
-/* Fix iPad, iPhone glitches */
 .remodal-overlay,
 .remodal-wrapper {
   backface-visibility: hidden; }
 
-/* Necessary styles of the modal dialog */
 .remodal {
   position: relative;
   outline: none;
@@ -2210,7 +2193,6 @@ html.remodal-is-locked {
   text-size-adjust: 100%; }
 
 .remodal-is-initialized {
-  /* Disable Anti-FOUC */
   display: inline-block; }
 
 .remodal-bg.remodal-is-opening, .remodal-bg.remodal-is-opened {
