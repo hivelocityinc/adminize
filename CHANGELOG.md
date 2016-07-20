@@ -1,3 +1,7 @@
+## v0.8.0
+- Internalize Remodal css. ([#40](https://github.com/hivelocityinc/adminize/pull/40))
+- Split mainly sass file.  ([#40](https://github.com/hivelocityinc/adminize/pull/40))
+
 ## v0.7.2
 - Fixed name for breakpoint variable ([#37](https://github.com/hivelocityinc/adminize/pull/37))
 - Added San Francisco to general font-family ([#38](https://github.com/hivelocityinc/adminize/pull/38))
