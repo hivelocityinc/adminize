@@ -1262,6 +1262,8 @@ select {
       pointer-events: none;
       cursor: not-allowed;
       opacity: .4; }
+    .select-styled select::-ms-expand {
+      display: none; }
   .select-styled::after {
     content: "";
     font-family: FontAwesome;
@@ -2183,6 +2185,7 @@ select {
 
 .remodal-overlay,
 .remodal-wrapper {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .remodal {
