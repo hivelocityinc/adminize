@@ -487,6 +487,28 @@ textarea {
 .bg--info {
   background-color: #f5fafd !important; }
 
+.display--block {
+  display: block !important; }
+
+.display--inline-block {
+  display: inline-block !important; }
+
+.display--inline {
+  display: inline !important; }
+
+.display--flex {
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.valign--top {
+  vertical-align: top !important; }
+
+.valign--middle {
+  vertical-align: middle !important; }
+
+.valign--bottom {
+  vertical-align: bottom !important; }
+
 .mgn0 {
   margin: 0px !important; }
 
