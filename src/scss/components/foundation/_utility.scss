@@ -63,6 +63,13 @@
 .display--flex {          display: flex !important; }
 
 
+// Vertical Align
+// --------------------
+.valign--top {     vertical-align: top !important; }
+.valign--middle {  vertical-align: middle !important; }
+.valign--bottom {  vertical-align: bottom !important; }
+
+
 // Margin
 // --------------------
 @each $prefix in $margin-list {
