@@ -1,3 +1,6 @@
+## v0.8.1
+- Fixed styled select's arrow in IE10 ([#43](https://github.com/hivelocityinc/adminize/pull/43))
+
 ## v0.8.0
 - Internalize Remodal css. ([#40](https://github.com/hivelocityinc/adminize/pull/40))
 - Split mainly sass file.  ([#40](https://github.com/hivelocityinc/adminize/pull/40))
