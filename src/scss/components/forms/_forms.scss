@@ -237,6 +237,9 @@ select {
       cursor: not-allowed;
       opacity: .4;
     }
+    &::-ms-expand {
+      display: none;
+    }
   }
   &::after {
     @include fontawesome("\f0d7");
