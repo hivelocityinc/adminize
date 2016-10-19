@@ -1,0 +1,21 @@
+.flatpickr-day {
+  &.selected,
+  &.today {
+    border-color: $primary-color;
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+  &.selected {
+    background: $primary-color;
+  }
+}
+
+.flatpickr-next-month,
+.flatpickr-prev-month {
+  svg:hover {
+    fill: $primary-color;
+  }
+}
