@@ -305,7 +305,7 @@ linters:
     ]
 
   SelectorFormat:
-    enabled: true
+    enabled: false
     convention: hyphenated_BEM
 
   SpaceAfterPropertyColon:
