@@ -40,6 +40,7 @@
   "dependencies": {
     "jquery": "^3.1.0",
     "fontawesome": "^4.6.3",
-    "remodal": "^1.1.0"
+    "remodal": "^1.1.0",
+    "flatpickr": "flatpickr-calendar#^2.0.5"
   }
 }
