@@ -1,3 +1,7 @@
+## v0.9.0
+- Support to the Datetimepicker([flatpickr](https://chmln.github.io/flatpickr/)) ([#46](https://github.com/hivelocityinc/adminize/pull/46))
+- Upgrade dependency modules
+
 ## v0.8.1
 - Fixed styled select's arrow in IE10 ([#43](https://github.com/hivelocityinc/adminize/pull/43))
 
