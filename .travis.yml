@@ -5,11 +5,8 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install:
-  - rvm install 2.2.2
 install:
   - npm install
-  - gem install scss_lint
 script:
   - npm run lint
 notifications:
