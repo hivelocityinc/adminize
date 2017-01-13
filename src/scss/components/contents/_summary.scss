@@ -10,6 +10,7 @@
   font-weight: bold;
   border-bottom: 1px solid $border-light-color;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
+
   .fa {
     margin-right: 6px;
   }
@@ -27,13 +28,16 @@
   font-weight: 500;
   line-height: 1;
   color: #333;
+
   &.diff {
     margin-top: 10px;
     font-size: 13px;
   }
+
   &.success {
     color: $success-color;
   }
+
   &.danger {
     color: $danger-color;
   }
@@ -42,11 +46,13 @@
 .summaries {
   height: 100%;
   overflow: hidden;
+
   .summary {
     float: left;
     width: 32%;
     margin-right: 2%;
     margin-bottom: 2%;
+
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -57,9 +63,11 @@
   .summaries {
     .summary {
       width: 49%;
+
       &:nth-child(3n) {
         margin-right: 2%;
       }
+
       &:nth-child(2n) {
         margin-right: 0;
       }

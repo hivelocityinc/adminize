@@ -421,13 +421,13 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
+  -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.5em;
   color: #333;
   background-color: #eee;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased; }
+  text-rendering: geometricPrecision; }
   body.is-sidebar-open {
     overflow: hidden; }
 
@@ -1271,10 +1271,10 @@ textarea {
   background-color: #4882b6; }
 
 .input--check + .icon::after {
-  content: "";
-  font-family: FontAwesome;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  content: "";
   top: -1px;
   left: 2px;
   font-size: 13px;
@@ -1321,10 +1321,10 @@ select {
     .select-styled select::-ms-expand {
       display: none; }
   .select-styled::after {
-    content: "";
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -1449,10 +1449,10 @@ select {
     opacity: .5;
     transition: 0.2s all ease; }
     .flash-msg > .close::before {
-      content: "";
-      font-family: FontAwesome;
-      -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      content: "";
       font-size: 20px;
       font-weight: normal; }
     .flash-msg > .close:hover {
@@ -1492,10 +1492,10 @@ select {
   text-align: center;
   cursor: pointer; }
   .head-bar__toggle::after {
-    content: "";
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "";
     font-size: 18px;
     color: #fff; }
 
@@ -1665,10 +1665,10 @@ select {
   .side-bar__list .parent-title {
     position: relative; }
     .side-bar__list .parent-title::before {
-      content: "";
-      font-family: FontAwesome;
-      -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      content: "";
       position: absolute;
       right: 20px;
       color: rgba(255, 255, 255, 0.5); }
@@ -1763,10 +1763,10 @@ select {
     padding-right: 14px;
     font-weight: bold; }
     .breadcrumbs__list a::after {
-      content: "";
-      font-family: FontAwesome;
-      -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      content: "";
       position: absolute;
       right: 0;
       font-size: 14px;
@@ -2230,8 +2230,8 @@ select {
   z-index: 10000;
   display: none;
   overflow: auto;
-  text-align: center;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  text-align: center; }
 
 .remodal-wrapper::after {
   display: inline-block;
@@ -2255,15 +2255,14 @@ select {
   display: inline-block; }
 
 .remodal-bg.remodal-is-opening, .remodal-bg.remodal-is-opened {
-  -webkit-filter: blur(3px);
   filter: blur(3px); }
 
 .remodal-overlay {
   background: rgba(0, 0, 0, 0.85); }
 
 .remodal-overlay.remodal-is-opening, .remodal-overlay.remodal-is-closing {
-  animation-duration: .3s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-duration: .3s; }
 
 .remodal-overlay.remodal-is-opening {
   animation-name: remodal-overlay-opening-keyframes; }
@@ -2281,8 +2280,8 @@ select {
   border-radius: 3px;
   transform: translate3d(0, 0, 0); }
   .remodal.remodal-is-opening, .remodal.remodal-is-closing {
-    animation-duration: .3s;
-    animation-fill-mode: forwards; }
+    animation-fill-mode: forwards;
+    animation-duration: .3s; }
   .remodal.remodal-is-opening {
     animation-name: remodal-opening-keyframes; }
   .remodal.remodal-is-closing {
@@ -2325,10 +2324,10 @@ select {
   border-top-right-radius: 3px;
   transition: 0.2s all ease; }
   .remodal__close::after {
-    content: "";
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "";
     font-size: 23px;
     line-height: 60px;
     color: #888;

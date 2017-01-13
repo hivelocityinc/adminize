@@ -2,7 +2,6 @@
 // Mixins
 // ------------------------------------------------------------
 
-
 // Media Query
 // --------------------
 @mixin tablet {
@@ -10,6 +9,7 @@
     @content;
   }
 }
+
 @mixin mobile {
   @media only screen and (max-width: $break-point-tablet) {
     @content;
@@ -19,14 +19,12 @@
 // FontAwesome
 // --------------------
 @mixin fontawesome($content) {
-  content: $content;
-  font-family: $icon-font-family;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $icon-font-family;
+  content: $content;
 }
 
 @mixin placeholder {
-  &::placeholder {
-    @content
-  }
+  &::placeholder { @content; }
 }

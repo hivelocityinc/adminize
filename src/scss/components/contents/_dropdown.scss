@@ -1,5 +1,6 @@
 .dropdown-group {
   position: relative;
+
   &.is-open .dropdown {
     display: block;
   }
@@ -18,30 +19,37 @@
   border: 1px solid $border-color;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+
   &.pos-top {
     top: auto;
     bottom: 100%;
   }
+
   &.pos-down {
     top: 100%;
     bottom: auto;
   }
+
   &.pos-left {
     right: auto;
     left: 0;
   }
+
   &.pos-right {
     right: 0;
     left: auto;
   }
+
   li {
     display: block;
     margin: 0;
   }
+
   a {
     display: block;
     padding: 6px 15px;
     color: $black;
+
     &:hover {
       text-decoration: none;
       background-color: $white-gray;

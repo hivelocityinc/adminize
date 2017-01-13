@@ -2,13 +2,13 @@
 // Typography
 // ------------------------------------------------------------
 
-
 // Anchor
 // ------------------------------
 a {
   color: $primary-color;
   text-decoration: none;
   transition: $base-transition;
+
   &:hover {
     text-decoration: underline;
   }
@@ -36,17 +36,20 @@ h6 {
   margin: 15px 0;
   line-height: 1.5;
 }
+
 h1,
 h2,
 h3 {
   margin-top: 25px;
   margin-bottom: 10px;
 }
+
 * > h1:first-child,
 * > h2:first-child,
 * > h3:first-child {
   margin-top: 0;
 }
+
 h1 { font-size: 26px; }
 h2 { font-size: 20px; }
 h3 { font-size: 18px; }
@@ -65,12 +68,14 @@ p {
 small {
   font-size: 12px;
 }
+
 blockquote {
   padding: 8px 15px;
   margin: 15px 0;
   color: $gray-dark;
   border-left: 4px solid $border-light-color;
 }
+
 code {
   padding: 2px 6px;
   margin: 0 4px;
@@ -86,16 +91,19 @@ code {
   font-size: 24px;
   color: $black;
   border-bottom: 3px solid rgba($black, .05);
+
   .fa {
     margin-right: 10px;
     font-size: 23px;
   }
 }
+
 .sub-header {
   padding-bottom: 5px;
   margin-bottom: 18px;
   border-bottom: 1px dashed rgba($black, .2);
 }
+
 @include mobile {
   .page-header {
     margin-bottom: 15px;
