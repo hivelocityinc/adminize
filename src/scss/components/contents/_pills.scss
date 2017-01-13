@@ -3,11 +3,13 @@
   margin: 0 0 20px;
   letter-spacing: -.4em;
   list-style: none;
+
   li {
     position: relative;
     display: inline-block;
     margin-right: 8px;
     letter-spacing: normal;
+
     &.is-active {
       a {
         font-weight: bold;
@@ -17,8 +19,10 @@
       }
     }
   }
+
   a {
     $pills-height: 34px;
+
     display: block;
     height: $pills-height;
     padding: 0 15px;
@@ -26,6 +30,7 @@
     color: $text-color;
     background-color: transparent;
     border-radius: $pills-height / 2;
+
     &:hover {
       text-decoration: none;
       background-color: darken($bg-color, 8%);

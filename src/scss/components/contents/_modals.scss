@@ -27,8 +27,8 @@
   z-index: 10000;
   display: none;
   overflow: auto;
-  text-align: center;
   -webkit-overflow-scrolling: touch;
+  text-align: center;
 }
 
 .remodal-wrapper::after {
@@ -67,12 +67,14 @@
 .remodal-overlay {
   &.remodal-is-opening,
   &.remodal-is-closing {
-    animation-duration: .3s;
     animation-fill-mode: forwards;
+    animation-duration: .3s;
   }
+
   &.remodal-is-opening {
     animation-name: remodal-overlay-opening-keyframes;
   }
+
   &.remodal-is-closing {
     animation-name: remodal-overlay-closing-keyframes;
   }
@@ -91,22 +93,26 @@
 
   &.remodal-is-opening,
   &.remodal-is-closing {
-    animation-duration: .3s;
     animation-fill-mode: forwards;
+    animation-duration: .3s;
   }
+
   &.remodal-is-opening {
     animation-name: remodal-opening-keyframes;
   }
+
   &.remodal-is-closing {
     animation-name: remodal-closing-keyframes;
   }
 }
+
 .remodal,
 .remodal-wrapper::after {
   vertical-align: middle;
 }
 
 $modal-head-height: 60px;
+
 .remodal__head {
   position: relative;
   height: $modal-head-height;
@@ -116,6 +122,7 @@ $modal-head-height: 60px;
   border-bottom: 1px solid $border-light-color;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
 }
+
 .remodal__title {
   width: 100%;
   padding-right: $modal-head-height;
@@ -127,6 +134,7 @@ $modal-head-height: 60px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .remodal__close {
   position: absolute;
   top: 0;
@@ -139,24 +147,30 @@ $modal-head-height: 60px;
   border-left: 1px solid $border-light-color;
   border-top-right-radius: 3px;
   transition: $base-transition;
+
   &::after {
     @include fontawesome("\f05c");
+
     font-size: 23px;
     line-height: $modal-head-height;
     color: $gray;
     transition: $base-transition;
   }
+
   &:hover {
     background-color: $white-gray;
+
     &::after {
       color: $gray-dark;
     }
   }
 }
+
 .remodal__body {
   padding: 20px;
   text-align: left;
 }
+
 .remodal__foot {
   padding: 20px;
   background-color: $white-gray;
@@ -166,12 +180,12 @@ $modal-head-height: 60px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .05) inset;
 }
 
-
 @keyframes remodal-opening-keyframes {
   from {
     opacity: 0;
     transform: scale(.05);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -183,6 +197,7 @@ $modal-head-height: 60px;
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0;
     transform: scale(.95);
@@ -193,6 +208,7 @@ $modal-head-height: 60px;
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -202,6 +218,7 @@ $modal-head-height: 60px;
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }

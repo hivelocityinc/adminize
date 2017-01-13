@@ -14,9 +14,11 @@
   border-radius: $base-radius;
   outline: 0;
   transition: $base-transition;
+
   &.with-icon .fa {
     margin-right: 8px;
   }
+
   &.disabled,
   &:disabled {
     pointer-events: none;
@@ -24,14 +26,17 @@
     opacity: .4;
   }
 }
+
 .btn--default {
   color: $text-color;
   background-color: $gray-lighter;
+
   &:hover {
     text-decoration: none;
     background-color: darken($gray-lighter, 5%);
   }
 }
+
 .btn--dark,
 .btn--primary,
 .btn--success,
@@ -39,56 +44,73 @@
 .btn--warning,
 .btn--info {
   color: $white;
+
   &:hover {
     text-decoration: none;
   }
 }
+
 .btn--dark {
   background-color: $sidebar-color;
+
   &:hover {
     background-color: darken($sidebar-color, 8%);
   }
 }
+
 .btn--primary {
   background-color: $primary-color;
+
   &:hover {
     background-color: darken($primary-color, 8%);
   }
 }
+
 .btn--success {
   background-color: $success-color;
+
   &:hover {
     background-color: darken($success-color, 8%);
   }
 }
+
 .btn--danger {
   background-color: $danger-color;
+
   &:hover {
     background-color: darken($danger-color, 8%);
   }
 }
+
 .btn--warning {
   background-color: $warning-color;
+
   &:hover {
     background-color: darken($warning-color, 8%);
   }
 }
+
 .btn--info {
   background-color: $info-color;
+
   &:hover {
     background-color: darken($info-color, 8%);
   }
 }
+
 .btn--small {
   padding: 8px 12px 7px;
   font-size: 13px;
+
   .fa {
     font-size: 14px;
   }
 }
+
 .btn--large {
   padding: 14px 40px;
   font-size: 17px;
+
   .fa {
     font-size: 17px;
   }

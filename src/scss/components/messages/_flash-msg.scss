@@ -2,7 +2,6 @@
 // Flash Messages
 // ------------------------------------------------------------
 
-
 .flash-msg {
   position: relative;
   padding: 15px 25px;
@@ -11,9 +10,11 @@
   background-color: $white;
   border: 1px solid $border-light-color;
   border-radius: $base-radius;
+
   > p {
     margin: 0;
   }
+
   > .close {
     position: absolute;
     top: 13px;
@@ -22,30 +23,37 @@
     border: 0;
     opacity: .5;
     transition: $base-transition;
+
     &::before {
       @include fontawesome("\f00d");
+
       font-size: 20px;
       font-weight: normal;
     }
+
     &:hover {
       opacity: .3;
     }
   }
+
   &.success {
     color: darken($success-color, 10%);
     background-color: lighten($success-color, 45%);
     border-color: lighten($success-color, 30%);
   }
+
   &.danger {
     color: darken($danger-color, 10%);
     background-color: lighten($danger-color, 45%);
     border-color: lighten($danger-color, 30%);
   }
+
   &.warning {
     color: darken($warning-color, 10%);
     background-color: lighten($warning-color, 45%);
     border-color: lighten($warning-color, 30%);
   }
+
   &.info {
     color: darken($info-color, 10%);
     background-color: lighten($info-color, 45%);

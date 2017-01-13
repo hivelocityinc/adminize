@@ -4,6 +4,7 @@
   margin: 0 0 -1px;
   letter-spacing: -.4em;
   list-style: none;
+
   > li {
     position: relative;
     display: inline-block;
@@ -11,11 +12,14 @@
     letter-spacing: normal;
     background-color: $white;
     border: 1px solid $border-color;
+
     &:first-child {
       margin-left: 0;
     }
+
     &.is-active {
       border-bottom-color: $white;
+
       a {
         color: $black;
         cursor: default;
@@ -23,10 +27,12 @@
       }
     }
   }
+
   a {
     display: block;
     padding: 10px 15px;
     background-color: $white-gray;
+
     &:hover {
       text-decoration: none;
       background-color: $gray-white;
@@ -39,8 +45,10 @@
   background-color: $white;
   border: 1px solid $border-color;
 }
+
 .tab-pane {
   display: none;
+
   &.is-active {
     display: block;
   }

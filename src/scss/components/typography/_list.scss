@@ -2,7 +2,6 @@
 // Utility
 // ------------------------------------------------------------
 
-
 // Basic
 // --------------------
 ul,
@@ -10,15 +9,18 @@ ol {
   padding: 0;
   margin: 15px 0 15px 18px;
 }
+
 ul {
   ul {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
+
 ol {
   margin-left: 23px;
 }
+
 li {
   margin: 2px 0;
 }
@@ -30,6 +32,7 @@ li {
   margin: 0;
   list-style: none;
 }
+
 .list + .list {
   margin-top: 10px;
 }
@@ -37,12 +40,15 @@ li {
 .list-inline,
 .list-btn {
   letter-spacing: -.4em;
+
   li {
     display: inline-block;
     letter-spacing: normal;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
@@ -52,19 +58,23 @@ li {
 .list-unstyled {
   li {
     margin: 15px 0;
+
     &:first-child {
       margin-top: 0;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
 }
+
 .list-inline {
   li {
     margin: 0 15px;
   }
 }
+
 .list-btn {
   li {
     margin: 0 5px;

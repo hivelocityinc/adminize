@@ -8,18 +8,22 @@
   letter-spacing: -.4em;
   list-style: none;
 }
+
 .breadcrumbs__list {
   display: inline-block;
   margin-right: 8px;
   font-size: 12px;
   letter-spacing: normal;
+
   a {
     position: relative;
     display: block;
     padding-right: 14px;
     font-weight: bold;
+
     &::after {
       @include fontawesome("\f105");
+
       position: absolute;
       right: 0;
       font-size: $base-font-size;
@@ -28,6 +32,7 @@
     }
   }
 }
+
 @include mobile {
   .breadcrumbs {
     display: none;

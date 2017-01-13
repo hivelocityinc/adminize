@@ -8,38 +8,48 @@
   border-collapse: collapse;
   background-color: $white;
   border: 1px solid $border-color;
+
   thead {
     border-bottom: 3px double $border-light-color;
+
     th,
     td {
       padding-top: 14px;
     }
   }
+
   tr {
     border-bottom: 1px dotted $border-light-color;
+
     &:last-child {
       border-bottom: 0;
     }
   }
+
   th,
   td {
     padding: 12px 25px;
+
     &.area-btn {
       padding-top: 18px;
       padding-bottom: 18px;
       text-align: right;
     }
   }
+
   th {
     text-align: left;
   }
 }
+
 .table--panel {
   border: 0;
+
   thead {
     border-bottom-width: 2px;
   }
 }
+
 .table--striped {
   tr {
     &:nth-child(2n) {
@@ -47,13 +57,16 @@
     }
   }
 }
+
 .table--bordered {
   tr {
     border-bottom-style: solid;
   }
+
   th,
   td {
     border-right: 1px solid $border-light-color;
+
     &:last-child {
       border-right: 0;
     }

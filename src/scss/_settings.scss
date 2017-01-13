@@ -25,7 +25,6 @@ $border-light-color:      lighten($border-color, 8%) !default;
 $text-color:              $gray-darker !default;
 $bg-color:                #eee !default;
 
-
 // Typography
 $base-font-size:          14px !default;
 $base-line-height:        1.5em !default;
@@ -39,7 +38,6 @@ $btn-height:              40px !default;
 $input-style-size:        24px !default;
 $header-logo-size:        32px !default;
 
-
 // Z-Index
 $head-zindex:             20 !default;
 $content-zindex:          30 !default;
@@ -51,11 +49,9 @@ $dropdown-zindex:         60 !default;
 $base-radius:             3px !default;
 $base-transition:         .2s all ease !default;
 
-
 // Break Point
 $break-point-laptop:      1000px !default;
 $break-point-tablet:       800px !default;
-
 
 // List
 $margin-list:             0, 2, 3, 5, 10, 15, 20, 25, 30, 40, 50, 60 !default;
