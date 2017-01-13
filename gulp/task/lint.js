@@ -2,16 +2,18 @@
 
 let gulp = require('gulp');
 let gulpLoadPlugin = require('gulp-load-plugins');
-let $ = gulpLoadPlugin({
-  rename: {
-    'gulp-scss-lint': 'scssLint'
-  }
-});
+let $ = gulpLoadPlugin();
+let postcssScss = require('postcss-scss');
+let postcssReporter = require('postcss-reporter');
+let stylelint = require('stylelint');
 let config = require('../config');
 
 gulp.task('lint:style', () => {
   return gulp.src(config.style.src)
-    .pipe($.scssLint(config.style.lint));
+    .pipe($.postcss([
+      stylelint(),
+      postcssReporter({clearMessages: true})
+    ], {syntax: postcssScss}));
 });
 
 gulp.task('lint:script', () => {
