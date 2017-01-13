@@ -1,28 +1,8 @@
-scss_files: "src/scss/**/*.scss"
-
-linters:
-  ColorVariable:
-    enabled: false
-
-  EmptyLineBetweenBlocks:
-    enabled: false
-    ignore_single_line_blocks: true
-
-  ImportantRule:
-    enabled: false
-
-  MergeableSelector:
-    enabled: false
-    force_nesting: true
-
-  NestingDepth:
-    enabled: false
-
-  PropertySortOrder:
-    enabled: true
-    ignore_unspecified: false
-    severity: warning
-    order: [
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "number-leading-zero": "never",
+    "declaration-block-properties-order": [
       "position",
       "top",
       "right",
@@ -303,20 +283,5 @@ linters:
       "-o-animation-direction",
       "animation-direction"
     ]
-
-  SelectorFormat:
-    enabled: false
-    convention: hyphenated_BEM
-
-  SpaceAfterPropertyColon:
-    enabled: true
-    style: at_least_one_space
-
-  SpaceBeforeBrace:
-    enabled: true
-    style: space
-    allow_single_line_padding: true
-
-  StringQuotes:
-    enabled: true
-    style: double_quotes
+  }
+}
