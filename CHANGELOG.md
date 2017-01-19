@@ -1,3 +1,10 @@
+## v0.9.3
+- Support to yarn
+- Change scss lint tool from scss_lint to stylelint
+- Update gulp-sass to version 3.0.0 🚀
+- Update gulp-copy to version 1.0.0 🚀
+- Update harp to version 0.23.0 🚀
+
 ## v0.9.0
 - Support to the Datetimepicker([flatpickr](https://chmln.github.io/flatpickr/)) ([#46](https://github.com/hivelocityinc/adminize/pull/46))
 - Upgrade dependency modules
