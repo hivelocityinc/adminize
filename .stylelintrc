@@ -1,8 +1,11 @@
 {
   "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "number-leading-zero": "never",
-    "declaration-block-properties-order": [
+    "order/declaration-block-properties-specified-order": [
       "position",
       "top",
       "right",

@@ -57,7 +57,7 @@
     "postcss-scss": "^0.4.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
-    "stylelint": "^7.7.1",
+    "stylelint": "^7.8.0",
     "stylelint-config-standard": "^16.0.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
@@ -68,6 +68,7 @@
     "font-awesome": "^4.6.3",
     "jquery": "^3.1.0",
     "normalize.css": "^5.0.0",
-    "remodal": "^1.1.0"
+    "remodal": "^1.1.0",
+    "stylelint-order": "^0.2.2"
   }
 }
