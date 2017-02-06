@@ -48,7 +48,6 @@
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
-    "gulp-scss-lint": "^0.4.0",
     "gulp-sourcemaps": "^2.0.1",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.8",
@@ -59,8 +58,8 @@
     "run-sequence": "^1.2.2",
     "stylelint": "^7.8.0",
     "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.2.2",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
@@ -68,7 +67,6 @@
     "font-awesome": "^4.6.3",
     "jquery": "^3.1.0",
     "normalize.css": "^5.0.0",
-    "remodal": "^1.1.0",
-    "stylelint-order": "^0.2.2"
+    "remodal": "^1.1.0"
   }
 }
