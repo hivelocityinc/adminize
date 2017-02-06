@@ -1,3 +1,10 @@
+## v0.9.4
+- Cleanup npm modules
+- Tweak gulp script
+- Update webpack to v2.2.1 🚀
+- Update babel-register to v6.22.0 🚀
+- Update stylelint-config-standard to v16.0.0 🚀
+
 ## v0.9.3
 - Support to yarn
 - Change scss lint tool from scss_lint to stylelint
