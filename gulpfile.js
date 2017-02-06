@@ -31,6 +31,7 @@ gulp.task('serve', () => {
   return runSequence(
     'lint',
     'style',
+    'script',
     'minify',
     'watch',
     'harp'
