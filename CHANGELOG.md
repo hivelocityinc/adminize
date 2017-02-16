@@ -1,4 +1,4 @@
-## v0.9.4
+## v1.0.0 (v0.9.4)
 - Cleanup npm modules
 - Tweak gulp script
 - Update webpack to v2.2.1 🚀
