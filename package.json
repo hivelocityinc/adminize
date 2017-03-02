@@ -58,7 +58,7 @@
     "run-sequence": "^1.2.2",
     "stylelint": "^7.8.0",
     "stylelint-config-standard": "^16.0.0",
-    "stylelint-order": "^0.2.2",
+    "stylelint-order": "^0.3.0",
     "webpack": "^2.2.1",
     "webpack-stream": "^3.2.0"
   },
