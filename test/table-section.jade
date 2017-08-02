@@ -1,0 +1,47 @@
+h1.page-header
+  i.fa.fa-file-text-o
+  span Table Section
+
+table.table.ts-table-section
+  thead
+    tr
+      th ID
+      th Name
+      th Age
+  tbody
+    - var n = 0
+    - var m = 0
+    - var k = 0
+    tr.bg--info.ts-row-section
+      td
+        strong marchant name 1
+      td
+      td
+    while n < 10
+      tr
+        td #{n + 1}00
+        td Yamada
+        td #{(n+1) * (n+1)}
+      - n++
+    tr.bg--success.ts-row-section
+      td
+        strong marchant name 2
+      td
+      td
+    while m < 10
+      tr
+        td #{m + 2}00
+        td Tanaka
+        td #{(m+2) * (m+2)}
+      - m++
+    tr.bg--danger.ts-row-section
+      td
+        strong marchant name 3
+      td
+      td
+    while k < 10
+      tr
+        td #{k + 2}00
+        td Tanaka
+        td #{(k+2) * (k+2)}
+      - k++

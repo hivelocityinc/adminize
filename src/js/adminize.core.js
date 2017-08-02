@@ -9,6 +9,7 @@ export default class Adminize {
     this.tab();
     this.flashMsgClose();
     this.dropdown();
+    this.appendTableSection();
   };
 
   setSidebarHeight () {
@@ -136,4 +137,70 @@ export default class Adminize {
       }
     });
   };
+
+  updateTableSections () {
+    $('.ts-table-section').each(function (index, table) {
+      const verticalOffset = 60;
+      let $table = $(table);
+      let toffset = $(table).offset();
+      let scrollTop = $(window).scrollTop() + verticalOffset;
+      let rows = $table.find('.ts-row-section');
+      let frows = $table.find('.ts-row-fixed');
+
+      rows.each(function (index, row) {
+        let $row = $(row);
+        let roffset = $row.offset();
+        let hpoint = (index + 1 === rows.length) ? (toffset.top + $table.height()) : ($(rows[index + 1]).offset().top);
+        let voffset;
+
+        if ((scrollTop > roffset.top) && (scrollTop < hpoint)) {
+          voffset = Math.max(0, (scrollTop - (hpoint - $row.height())));
+          $(frows[index]).css('visibility', 'visible')
+                         .css('top', verticalOffset - voffset);
+        } else {
+          $(frows[index]).css('visibility', 'hidden');
+        }
+      });
+    });
+  }
+
+  updateRowWidths () {
+    $('.ts-table-section').each(function (index, table) {
+      let $table = $(table);
+      let rows = $table.find('.ts-row-section');
+      let frows = $table.find('.ts-row-fixed');
+
+      rows.each(function (index, row) {
+        let cells = $(row).find('th,td');
+        $(frows[index]).find('th,td').each(function (index, ccell) {
+          $(ccell).width($(cells[index]).width())
+                  .height($(cells[index]).height());
+        });
+      });
+    });
+  }
+
+  appendTableSection () {
+    const verticalOffset = 60;
+    $('.ts-table-section').each(function (index, table) {
+      $(table).find('.ts-row-section').each(function (index, row) {
+        let $row = $(row);
+        let crow = $row.clone()
+                       .removeClass('ts-row-section')
+                       .addClass('ts-row-fixed')
+                       .css('top', verticalOffset)
+                       .appendTo($row.parent());
+        let cells = $row.find('th,td');
+        $(crow).find('th,td').each(function (index, ccell) {
+          $(ccell).width($(cells[index]).width())
+                  .height($(cells[index]).height());
+        });
+      });
+
+      $('<tr></tr>').css({
+        'position': 'fixed',
+        'visibility': 'hidden'
+      }).appendTo(table);
+    });
+  }
 };

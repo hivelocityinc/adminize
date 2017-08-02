@@ -2041,6 +2041,11 @@ select {
   .table--bordered td:last-child {
     border-right: 0; }
 
+.ts-row-fixed {
+  position: fixed;
+  z-index: 1;
+  visibility: hidden; }
+
 .tab {
   position: relative;
   padding: 0;
