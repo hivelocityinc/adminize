@@ -6,7 +6,11 @@ import Adminize from './adminize.core';
     .on('load', () => {
       adminize.initialize();
     })
+    .on('scroll', () => {
+      adminize.updateTableSections();
+    })
     .on('resize', () => {
       adminize.setSidebarHeight();
+      adminize.updateRowWidths();
     });
 })(jQuery);

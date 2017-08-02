@@ -56,8 +56,11 @@
 	  var adminize = new _adminize2.default();
 	  $(window).on('load', function () {
 	    adminize.initialize();
+	  }).on('scroll', function () {
+	    adminize.updateTableSections();
 	  }).on('resize', function () {
 	    adminize.setSidebarHeight();
+	    adminize.updateRowWidths();
 	  });
 	})(jQuery);
 
@@ -91,6 +94,7 @@
 	      this.tab();
 	      this.flashMsgClose();
 	      this.dropdown();
+	      this.appendTableSection();
 	    }
 	  }, {
 	    key: 'setSidebarHeight',
@@ -219,6 +223,68 @@
 	        if (_hoverFlg === false) {
 	          _allParent.removeClass(_openClass);
 	        }
+	      });
+	    }
+	  }, {
+	    key: 'updateTableSections',
+	    value: function updateTableSections() {
+	      $('.ts-table-section').each(function (index, table) {
+	        var verticalOffset = 60;
+	        var $table = $(table);
+	        var toffset = $(table).offset();
+	        var scrollTop = $(window).scrollTop() + verticalOffset;
+	        var rows = $table.find('.ts-row-section');
+	        var frows = $table.find('.ts-row-fixed');
+	
+	        rows.each(function (index, row) {
+	          var $row = $(row);
+	          var roffset = $row.offset();
+	          var hpoint = index + 1 === rows.length ? toffset.top + $table.height() : $(rows[index + 1]).offset().top;
+	          var voffset = void 0;
+	
+	          if (scrollTop > roffset.top && scrollTop < hpoint) {
+	            voffset = Math.max(0, scrollTop - (hpoint - $row.height()));
+	            $(frows[index]).css('visibility', 'visible').css('top', verticalOffset - voffset);
+	          } else {
+	            $(frows[index]).css('visibility', 'hidden');
+	          }
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'updateRowWidths',
+	    value: function updateRowWidths() {
+	      $('.ts-table-section').each(function (index, table) {
+	        var $table = $(table);
+	        var rows = $table.find('.ts-row-section');
+	        var frows = $table.find('.ts-row-fixed');
+	
+	        rows.each(function (index, row) {
+	          var cells = $(row).find('th,td');
+	          $(frows[index]).find('th,td').each(function (index, ccell) {
+	            $(ccell).width($(cells[index]).width()).height($(cells[index]).height());
+	          });
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'appendTableSection',
+	    value: function appendTableSection() {
+	      var verticalOffset = 60;
+	      $('.ts-table-section').each(function (index, table) {
+	        $(table).find('.ts-row-section').each(function (index, row) {
+	          var $row = $(row);
+	          var crow = $row.clone().removeClass('ts-row-section').addClass('ts-row-fixed').css('top', verticalOffset).appendTo($row.parent());
+	          var cells = $row.find('th,td');
+	          $(crow).find('th,td').each(function (index, ccell) {
+	            $(ccell).width($(cells[index]).width()).height($(cells[index]).height());
+	          });
+	        });
+	
+	        $('<tr></tr>').css({
+	          'position': 'fixed',
+	          'visibility': 'hidden'
+	        }).appendTo(table);
 	      });
 	    }
 	  }]);
